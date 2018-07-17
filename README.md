@@ -28,19 +28,19 @@ Ongoing Ph.D. research work by Padmaraj Nidagundi </b>
 
 <li> Introduction to Lean Canvas Transformation Models and Metrics in Software Testing LN Padmaraj Nidagundi Scientific Journal of RTU 19 , 30-36	6*	2016</li> 
 
-<li> Introducing Lean Canvas Model Adaptation in the Scrum Software Testing LN Padmaraj Nidagundi sciencedirect 104, 97–103	5*	2017/li>
+<li> Introducing Lean Canvas Model Adaptation in the Scrum Software Testing LN Padmaraj Nidagundi sciencedirect 104, 97–103	5*	2017</li>
 
-<li> Towards Utilization of a Lean Canvas in the Biometric Software Testing P Nidagundi, L Novickis IIOAB Journal-Institute of Integrative Omics and Applied Biotechnology	2	2017/li>
+<li> Towards Utilization of a Lean Canvas in the Biometric Software Testing P Nidagundi, L Novickis IIOAB Journal-Institute of Integrative Omics and Applied Biotechnology	2	2017</li>
 
-<li> Survey on Software Test Strategy VP Padmaraj Nidagundi THE IRES INTERNATIONAL CONFERENCE, 1-3	2017/li>
+<li> Survey on Software Test Strategy VP Padmaraj Nidagundi THE IRES INTERNATIONAL CONFERENCE, 1-3	2017</li>
 
-<li> New method for mobile application testing using lean canvas to improving the test strategy P Nidagundi, L Novickis Computer Sciences and Information Technologies (CSIT), 2017 12th …	2017/li>
+<li> New method for mobile application testing using lean canvas to improving the test strategy P Nidagundi, L Novickis Computer Sciences and Information Technologies (CSIT), 2017 12th …	2017</li>
 
-<li> Towards Utilization of a Lean Canvas in the Testing Extra-Functional Properties P Nidagundi, L Novickis Computer Science On-line Conference, 349-354	2017/li>
+<li> Towards Utilization of a Lean Canvas in the Testing Extra-Functional Properties P Nidagundi, L Novickis Computer Science On-line Conference, 349-354	2017</li>
 
-<li> Towards Utilization of Lean Canvas in the DevOps Software P Nidagundi, L Novickis Proceedings of the 11th International Scientific and Practical Conference …	2017/li>
+<li> Towards Utilization of Lean Canvas in the DevOps Software P Nidagundi, L Novickis Proceedings of the 11th International Scientific and Practical Conference …	2017</li>
 
-<li> Introduction to adoption of lean canvas in software test architecture design P Nidagundi, M Lukjanska Computational Methods in Social Sciences 4 (2), 23	2016/li>
+<li> Introduction to adoption of lean canvas in software test architecture design P Nidagundi, M Lukjanska Computational Methods in Social Sciences 4 (2), 23	2016</li>
 
 <li> Possibilities about the design lean canvas model and its adaptation in the agile testing P Nidagundi, L Novickis 2016 /li>
 
