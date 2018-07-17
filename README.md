@@ -1,4 +1,12 @@
 # TestStrategy
+
+What is Test strategy
+A test strategy is an outline that describes the testing approach of the software development cycle. It is created to inform project managers, testers, and developers about some key issues of the testing process. This includes the testing objective, methods of testing new functions, total time and resources required for the project, and the testing environment. ( Source - Wikipedia )
+
+What is Strategy
+Strategy (from Greek στρατηγία stratēgia, "art of troop leader; office of general, command, generalship"[1]) is a high-level plan to achieve one or more goals under conditions of uncertainty. ( Source - Wikipedia )
+
+
 <b> Ongoing Ph.D. research work by Padmaraj Nidagundi </b> 
 
 Padmaraj Nidagundi
