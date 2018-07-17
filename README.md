@@ -1,5 +1,5 @@
 # TestStrategy
-Ongoing Ph.D. research work by Padmaraj Nidagundi
+<b> Ongoing Ph.D. research work by Padmaraj Nidagundi </b> 
 
 Padmaraj Nidagundi
 PhD Student, Faculty of Computer Science, Riga Technical University
