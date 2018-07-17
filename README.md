@@ -8,8 +8,12 @@ Ongoing Ph.D. research work by Padmaraj Nidagundi
 URL for prototype
 https://codepen.io/PadmarajNidagundi/full/PBNXYd/
 
+URL with Source code
+https://codepen.io/PadmarajNidagundi/pen/PBNXYd
+
 URL for prototype
 https://padmarajnidagundi.github.io/TestStrategy/
+
 
 <b> Number of Research Paper Sources 
 Ongoing Ph.D. research work by Padmaraj Nidagundi </b>
@@ -33,3 +37,5 @@ Ongoing Ph.D. research work by Padmaraj Nidagundi </b>
 <li> Possibilities about the design lean canvas model and its adaptation in the agile testing P Nidagundi, L Novickis 2016 /li>
 
 <li> Introduction to Investigation And Utilizing Lean Test Metrics In Agile Software Testing Methodologies P Nidagundi International Journal of Engineering Research and Applications 6 (Issue 4) 2016/li>
+
+
