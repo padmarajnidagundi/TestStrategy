@@ -9,7 +9,7 @@ URL for prototype
 https://codepen.io/PadmarajNidagundi/full/PBNXYd/
 
 URL for prototype
-https://padmarajnidagundi.github.io/TestStrategy/TestStrategy
+https://padmarajnidagundi.github.io/TestStrategy/
 
 <b> Number of Research Paper Sources 
 Ongoing Ph.D. research work by Padmaraj Nidagundi </b>
