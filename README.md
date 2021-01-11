@@ -5,13 +5,18 @@ A test strategy is an outline that describes the testing approach of the softwar
 
 <b>What is Strategy</b><p>
 Strategy (from Greek στρατηγία stratēgia, "art of troop leader; office of general, command, generalship"[1]) is a high-level plan to achieve one or more goals under conditions of uncertainty. ( Source - Wikipedia )
-
-
+  
 <b> Ongoing Ph.D. research work by Padmaraj Nidagundi </b> 
 
 Padmaraj Nidagundi
 PhD Student, Faculty of Computer Science, Riga Technical University
 Ongoing Ph.D. research work by Padmaraj Nidagundi
+
+<b>Website URL : 
+https://teststrategy.org/ <7b>
+SMOKE TESTING, also known as “Build Verification Testing”, is a type of software testing that comprises of a non-exhaustive set of tests that aim at ensuring that the most important functions work - https://teststrategy.org/smoke-test-strategy/
+
+Regression testing (rarely non-regression testing) is re-running functional and non-functional tests to ensure that previously developed and tested software still performs after a change. If not, that would be called a regression.  - https://teststrategy.org/regression-testing-strategy-online/
 
 URL for prototype
 https://codepen.io/PadmarajNidagundi/full/PBNXYd/
