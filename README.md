@@ -13,7 +13,7 @@ PhD Student, Faculty of Computer Science, Riga Technical University
 Ongoing Ph.D. research work by Padmaraj Nidagundi
 
 <b>Website URL : 
-https://teststrategy.org/ <7b>
+https://teststrategy.org/ </b>
 SMOKE TESTING, also known as “Build Verification Testing”, is a type of software testing that comprises of a non-exhaustive set of tests that aim at ensuring that the most important functions work - https://teststrategy.org/smoke-test-strategy/
 
 Regression testing (rarely non-regression testing) is re-running functional and non-functional tests to ensure that previously developed and tested software still performs after a change. If not, that would be called a regression.  - https://teststrategy.org/regression-testing-strategy-online/
