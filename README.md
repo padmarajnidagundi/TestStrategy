@@ -13,11 +13,20 @@ PhD Student, Faculty of Computer Science, Riga Technical University
 Ongoing Ph.D. research work by Padmaraj Nidagundi
 
 <b>Website URL : 
-https://teststrategy.org/ </b>
+https://teststrategy.org/ </b><p>
 SMOKE TESTING, also known as “Build Verification Testing”, is a type of software testing that comprises of a non-exhaustive set of tests that aim at ensuring that the most important functions work - https://teststrategy.org/smoke-test-strategy/
-
+<p>
 Regression testing (rarely non-regression testing) is re-running functional and non-functional tests to ensure that previously developed and tested software still performs after a change. If not, that would be called a regression.  - https://teststrategy.org/regression-testing-strategy-online/
-
+<p>
+Performance testing is a testing measure that evaluates the speed, responsiveness and stability of a computer, network, software program or device under a workload. Organizations will run performance tests in order to identify performance-related bottlenecks. https://teststrategy.org/performance-testing-test-strategy/
+<p>
+ DevOps is all about streamlining and automating your entire software delivery lifecycle. For most organizations, a successful DevOps testing strategy starts with adopting the agile best practice of Continuous Integration (CI), where developers check code into a shared repository several times a day. https://teststrategy.org/devops-test-strategy/
+  <p>
+SECURITY TESTING is a type of software testing that intends to uncover vulnerabilities of the system and determine that its data and resources are protected from possible intruders. It falls under non-functional testing. ISTQB Definition. security testing: Testing to determine the security of the software product. https://teststrategy.org/security-test-strategy-template/
+   <p> 
+  
+  
+  
 URL for prototype
 https://codepen.io/PadmarajNidagundi/full/PBNXYd/
 
