@@ -12,7 +12,7 @@ Padmaraj Nidagundi
 PhD Student, Faculty of Computer Science, Riga Technical University
 Ongoing Ph.D. research work by Padmaraj Nidagundi
 
-<b>Website URL : 
+#<b>Website URL : 
 https://teststrategy.org/ </b><p>
 SMOKE TESTING, also known as “Build Verification Testing”, is a type of software testing that comprises of a non-exhaustive set of tests that aim at ensuring that the most important functions work - https://teststrategy.org/smoke-test-strategy/
 <p>
@@ -56,7 +56,7 @@ Ongoing Ph.D. research work by Padmaraj Nidagundi </b>
 
 <li> Introduction to adoption of lean canvas in software test architecture design P Nidagundi, M Lukjanska Computational Methods in Social Sciences 4 (2), 23	2016</li>
 
-<li> Possibilities about the design lean canvas model and its adaptation in the agile testing P Nidagundi, L Novickis 2016 /li>
+<li> Possibilities about the design lean canvas model and its adaptation in the agile testing P Nidagundi, L Novickis 2016 </li>
 
 <li> Introduction to Investigation And Utilizing Lean Test Metrics In Agile Software Testing Methodologies P Nidagundi International Journal of Engineering Research and Applications 6 (Issue 4) 2016</li>
 
