@@ -13,7 +13,7 @@ PhD Student, Faculty of Computer Science, Riga Technical University
 Ongoing Ph.D. research work by Padmaraj Nidagundi
 
 #<b>Website URL : 
-https://teststrategy.org/ </b><p>
+https://teststrategy.org/  READY TO USE TEMPLATES TO project managers, testers, and developers </b><p>
 SMOKE TESTING, also known as “Build Verification Testing”, is a type of software testing that comprises of a non-exhaustive set of tests that aim at ensuring that the most important functions work - https://teststrategy.org/smoke-test-strategy/
 <p>
 Regression testing (rarely non-regression testing) is re-running functional and non-functional tests to ensure that previously developed and tested software still performs after a change. If not, that would be called a regression.  - https://teststrategy.org/regression-testing-strategy-online/
@@ -26,7 +26,9 @@ SECURITY TESTING is a type of software testing that intends to uncover vulnerabi
    <p> 
   
   
+<b>Visualization or visualisation (see spelling differences) is any technique for creating images, diagrams, or animations to communicate a message.</b>
   
+ <b> prototype code   </b> 
 URL for prototype
 https://codepen.io/PadmarajNidagundi/full/PBNXYd/
 
