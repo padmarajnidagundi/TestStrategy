@@ -133,6 +133,17 @@
 
     <button onclick="toggleHighlight()">Toggle Highlight</button>
 
+    <h2>Using Lean Canvas in the AI and MCP Era (2026)</h2>
+    <p>In the rapidly evolving landscape of 2026, where AI and advanced model protocols like MCP (Model Context Protocol) are transforming software development, the Lean Canvas Test Strategy can be leveraged in innovative ways:</p>
+    <ul>
+        <li><strong>AI-Driven Test Generation:</strong> Use AI tools to automatically populate and refine the Test Problems and Solutions sections based on code analysis and historical data.</li>
+        <li><strong>Automated Metrics Collection:</strong> Integrate MCP to connect with AI models for real-time metric tracking, enabling dynamic updates to the Key Metrics box.</li>
+        <li><strong>Predictive Testing:</strong> Employ AI to forecast potential issues, enhancing the Unique Value Proposition by predicting testing outcomes.</li>
+        <li><strong>Collaborative AI Assistance:</strong> Use AI assistants to facilitate brainstorming for Customer Segments and Revenue Streams in agile, AI-augmented teams.</li>
+        <li><strong>Visualization Enhancements:</strong> Leverage AI-powered visualization tools to create interactive, data-driven representations of the canvas.</li>
+    </ul>
+    <p>Anyone can start by adapting this template: Download the canvas, input your project specifics, and use AI tools to analyze and optimize your test strategy iteratively.</p>
+
     <script>
         function toggleHighlight() {
             const boxes = document.querySelectorAll('.box');
@@ -144,6 +155,23 @@
                 }
             });
         }
+
+        // Add simple edit functionality
+        document.querySelectorAll('.box').forEach(box => {
+            box.addEventListener('click', function() {
+                const content = this.innerHTML;
+                const editable = document.createElement('div');
+                editable.contentEditable = true;
+                editable.innerHTML = content;
+                this.innerHTML = '';
+                this.appendChild(editable);
+                editable.focus();
+
+                editable.addEventListener('blur', function() {
+                    box.innerHTML = this.innerHTML;
+                });
+            });
+        });
     </script>
 </body>
 </html>

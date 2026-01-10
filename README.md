@@ -32,6 +32,24 @@ Research Interests: Test Strategy, Visualization, Information Visualization, Aut
 
 - **Security Testing**: A type of software testing that intends to uncover vulnerabilities of the system and determine that its data and resources are protected from possible intruders. It falls under non-functional testing. ISTQB Definition: security testing: Testing to determine the security of the software product. [Strategy Link](https://teststrategy.org/security-test-strategy-template/)
 
+## Using Lean Canvas in the AI and MCP Era (2026)
+
+In the innovative development era of 2026, characterized by advancements in Artificial Intelligence (AI) and protocols like Model Context Protocol (MCP), the Lean Canvas Test Strategy can be powerfully adapted for modern software testing:
+
+- **AI-Driven Test Generation**: Leverage AI to automatically identify and populate Test Problems and Solutions based on code repositories, historical bug data, and predictive analytics.
+- **Automated Metrics with MCP**: Integrate MCP to enable seamless communication between AI models and testing tools, allowing real-time collection and visualization of Key Metrics.
+- **Predictive and Adaptive Strategies**: Use AI to forecast testing challenges, dynamically updating the Unique Value Proposition and Unfair Advantage sections.
+- **Collaborative AI Tools**: Employ AI assistants for brainstorming and refining Customer Segments, Channels, and Revenue Streams in AI-augmented development teams.
+- **Enhanced Visualization**: Utilize AI-powered visualization libraries to create interactive, data-driven dashboards that evolve with project needs.
+
+Anyone can get started by:
+1. Accessing the prototype dashboard at [index.html](index.html)
+2. Integrating AI tools for data input and analysis
+3. Iteratively refining the canvas using MCP for model-driven insights
+4. Sharing and collaborating via cloud-based platforms
+
+This approach ensures lean, efficient testing strategies that keep pace with 2026's AI-driven development cycles.
+
 ## Visualization
 
 Visualization or visualisation (see spelling differences) is any technique for creating images, diagrams, or animations to communicate a message.
