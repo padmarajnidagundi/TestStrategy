@@ -1,4 +1,4 @@
-# Test Strategy
+# AI Software testing strategy
 
 ## What is Test Strategy
 
