@@ -1,15 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lean Canvas Test Strategy Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .canvas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 200px);
+            gap: 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow-y: auto;
+        }
+        .box h3 {
+            margin-top: 0;
+            color: #555;
+        }
+        .box ul {
+            padding-left: 20px;
+        }
+        .box li {
+            margin-bottom: 5px;
+        }
+        .highlight {
+            background-color: #e8f5e8;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
 <body>
-<h1>Padmaraj Nidagundi</h1>
-<p>PhD Student, Faculty of Computer Science, Riga Technical University</p>
+    <h1>Lean Canvas Test Strategy Example Dashboard</h1>
+    <p style="text-align: center;">Based on Ph.D. research by Padmaraj Nidagundi - Adapting Lean Canvas for Software Testing Strategies</p>
 
-  <p>  <p>  <p>  <p>
-  
-  URL link to Test Strategy Board
-    <a href="https://codepen.io/PadmarajNidagundi/full/PBNXYd">Click here to Get Ongoing Ph.D. research work by Padmaraj Nidagundi</a>
-    <p>  <p>  <p>  <p>
-  <img src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/2173759.PBNXYd.ef82fe4b-abd9-409a-a595-47105cff319d.png">
-  
+    <div class="canvas">
+        <div class="box">
+            <h3>Test Problems</h3>
+            <ul>
+                <li>Lack of clear testing objectives</li>
+                <li>Resource constraints in testing</li>
+                <li>Delayed feedback in agile cycles</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Test Solutions</h3>
+            <ul>
+                <li>Implement Lean Canvas for test planning</li>
+                <li>Automate regression testing</li>
+                <li>Use metrics-driven approach</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Key Metrics</h3>
+            <ul>
+                <li>Test Coverage (%)</li>
+                <li>Defect Leakage Rate</li>
+                <li>Time to Detect Bugs</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Unique Value Proposition</h3>
+            <p>Streamlined testing strategy using Lean principles to reduce waste and improve efficiency in software development.</p>
+        </div>
+        <div class="box">
+            <h3>Unfair Advantage</h3>
+            <p>Proprietary Lean Canvas adaptation specifically for testing, backed by extensive research and real-world application.</p>
+        </div>
+        <div class="box">
+            <h3>Channels</h3>
+            <ul>
+                <li>Academic publications</li>
+                <li>Website templates (teststrategy.org)</li>
+                <li>Open-source prototypes</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Customer Segments</h3>
+            <ul>
+                <li>Project Managers</li>
+                <li>Testers</li>
+                <li>Developers</li>
+                <li>Agile Teams</li>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>Cost Structure</h3>
+            <ul>
+                <li>Research and development</li>
+                <li>Tool maintenance</li>
+                <li>Publication costs</li>
+            </ul>
+        </div>
+        <div class="box highlight">
+            <h3>Revenue Streams</h3>
+            <ul>
+                <li>Consulting services</li>
+                <li>Template sales</li>
+                <li>Training programs</li>
+            </ul>
+        </div>
+    </div>
+
+    <button onclick="toggleHighlight()">Toggle Highlight</button>
+
+    <h2>Using Lean Canvas in the AI and MCP Era (2026)</h2>
+    <p>In the rapidly evolving landscape of 2026, where AI and advanced model protocols like MCP (Model Context Protocol) are transforming software development, the Lean Canvas Test Strategy can be leveraged in innovative ways:</p>
+    <ul>
+        <li><strong>AI-Driven Test Generation:</strong> Use AI tools to automatically populate and refine the Test Problems and Solutions sections based on code analysis and historical data.</li>
+        <li><strong>Automated Metrics Collection:</strong> Integrate MCP to connect with AI models for real-time metric tracking, enabling dynamic updates to the Key Metrics box.</li>
+        <li><strong>Predictive Testing:</strong> Employ AI to forecast potential issues, enhancing the Unique Value Proposition by predicting testing outcomes.</li>
+        <li><strong>Collaborative AI Assistance:</strong> Use AI assistants to facilitate brainstorming for Customer Segments and Revenue Streams in agile, AI-augmented teams.</li>
+        <li><strong>Visualization Enhancements:</strong> Leverage AI-powered visualization tools to create interactive, data-driven representations of the canvas.</li>
+    </ul>
+    <p>Anyone can start by adapting this template: Download the canvas, input your project specifics, and use AI tools to analyze and optimize your test strategy iteratively.</p>
+
+    <script>
+        function toggleHighlight() {
+            const boxes = document.querySelectorAll('.box');
+            boxes.forEach(box => {
+                if (box.classList.contains('highlight')) {
+                    box.classList.remove('highlight');
+                } else {
+                    box.classList.add('highlight');
+                }
+            });
+        }
+
+        // Add simple edit functionality
+        document.querySelectorAll('.box').forEach(box => {
+            box.addEventListener('click', function() {
+                const content = this.innerHTML;
+                const editable = document.createElement('div');
+                editable.contentEditable = true;
+                editable.innerHTML = content;
+                this.innerHTML = '';
+                this.appendChild(editable);
+                editable.focus();
+
+                editable.addEventListener('blur', function() {
+                    box.innerHTML = this.innerHTML;
+                });
+            });
+        });
+    </script>
 </body>
 </html>
