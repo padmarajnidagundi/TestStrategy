@@ -1,5 +1,7 @@
 # AI Software Testing Strategy : Comprehensive Guide for 2026
 
+🚀 **[Live Demo Available](https://padmarajnidagundi.github.io/TestStrategy/)** - Interactive AI Testing Strategy Dashboard
+
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/padmarajnidagundi/TestStrategy)
 [![GitHub Pages](https://img.shields.io/badge/demo-live-brightgreen.svg)](https://padmarajnidagundi.github.io/TestStrategy/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -11,13 +13,38 @@
 **Institution**: Riga Technical University, Faculty of Computer Science  
 **Reading Time**: 8 minutes
 
+> 🌐 **Try the Interactive Dashboard**: Experience the complete AI Testing Strategy framework with 8 testing approaches and Lean Canvas methodology at [https://padmarajnidagundi.github.io/TestStrategy/](https://padmarajnidagundi.github.io/TestStrategy/)
+
 ## Table of Contents
+- [Live Demo](#live-demo)
 - [What is Test Strategy](#what-is-test-strategy)
 - [About the Author](#about-the-author)
 - [Testing Strategies Covered](#testing-strategies-covered)
 - [AI and MCP Integration in Testing](#using-lean-canvas-in-the-ai-and-mcp-era-2026)
 - [Research Publications](#research-papers)
 - [Getting Started](#getting-started)
+
+---
+
+## Live Demo
+
+🎯 **Interactive AI Testing Strategy Dashboard**
+
+Experience the complete framework in action:
+- **Live Demo**: [https://padmarajnidagundi.github.io/TestStrategy/](https://padmarajnidagundi.github.io/TestStrategy/)
+- **Features**: 
+  - Interactive AI Testing Strategy Canvas with 9 specialized components
+  - 8 Essential AI Testing Approaches with detailed methodologies
+  - Modern, responsive UI with professional design
+  - SEO-optimized for AI software testing keywords
+  - Mobile-friendly and accessible
+  
+**What You'll Find**:
+- ✅ AI Testing Challenges & Solutions
+- ✅ Metamorphic Testing, Adversarial Testing, Fairness Testing
+- ✅ Explainability Testing, Performance Testing, Data Validation
+- ✅ Model Drift Monitoring, Integration Testing for AI Pipelines
+- ✅ Complete E-E-A-T optimized content for search engines
 
 ---
 
@@ -230,17 +257,24 @@ Explore working implementations of the Lean Canvas testing framework:
 
 ### 🚀 Interactive Prototype Demos
 
-1. **Full Interactive Prototype**  
+**🌟 Primary Demo - AI Testing Strategy Dashboard (2026)**  
+[**https://padmarajnidagundi.github.io/TestStrategy/**](https://padmarajnidagundi.github.io/TestStrategy/)  
+✨ **NEW**: Complete AI testing framework with modern UI, 8 testing approaches, and SEO optimization  
+**Features**: Responsive design, interactive canvas, comprehensive testing methodologies
+
+---
+
+**Legacy Prototypes** (Original Research Implementations):
+
+1. **Full Interactive Prototype (Classic Version)**  
    [View Live Demo](https://codepen.io/PadmarajNidagundi/full/PBNXYd/)  
-   Experience the complete Lean Canvas testing interface with interactive elements
+   Experience the original Lean Canvas testing interface with interactive elements
+Responsive Design, SEO Optimization
 
-2. **Source Code View**  
-   [Explore Implementation](https://codepen.io/PadmarajNidagundi/pen/PBNXYd)  
+**License**: Open-source - Free to use and adapt for your testing projects
+
+**GitHub Repository**: [https://github.com/padmarajnidagundi/TestStrategy](https://github.com/padmarajnidagundi/TestStrategy)d)  
    Review the HTML, CSS, and JavaScript implementation for educational purposes
-
-3. **GitHub Pages Deployment**  
-   [Production Version](https://padmarajnidagundi.github.io/TestStrategy/)  
-   Stable, production-ready version hosted on GitHub Pages
 
 **Technologies Used**: HTML5, CSS3, JavaScript (ES6+), D3.js for visualization
 
@@ -324,16 +358,18 @@ The following research contributions have been published in indexed journals and
 [Download Full Thesis (PDF)](https://ebooks.rtu.lv/wp-content/uploads/sites/32/2022/02/PD_Nidagundi_FINAL_A4.pdf)  
 *Hosted by Riga Technical University eBooks Repository*
 
----
+---the [**Live Dashboard**](https://padmarajnidagundi.github.io/TestStrategy/) to explore the complete AI testing framework
+2. Visit [TestStrategy.org](https://teststrategy.org/) for free downloadable templates
+3. Download the template that matches your project type
+4. Customize using the Lean Canvas framework
+5. Integrate AI tools for enhanced analysis
 
-## Getting Started
-
-### Quick Start Guide
-
-**For Test Managers and QA Leads**:
-1. Visit [TestStrategy.org](https://teststrategy.org/) for free templates
-2. Download the template that matches your project type
-3. Customize using the Lean Canvas framework
+**For Developers**:
+1. Explore the [**Live Demo**](https://padmarajnidagundi.github.io/TestStrategy/) for inspiration
+2. Clone or fork the [GitHub repository](https://github.com/padmarajnidagundi/TestStrategy)
+3. Open [index.html](index.html) locally
+4. Modify the canvas elements for your project needs
+5. Customize using the Lean Canvas framework
 4. Integrate AI tools for enhanced analysis
 
 **For Developers**:
