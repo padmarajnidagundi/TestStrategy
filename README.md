@@ -1,7 +1,13 @@
 # AI Software Testing Strategy : Comprehensive Guide for 2026
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/padmarajnidagundi/TestStrategy)
+[![GitHub Pages](https://img.shields.io/badge/demo-live-brightgreen.svg)](https://padmarajnidagundi.github.io/TestStrategy/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Research: PhD](https://img.shields.io/badge/Research-PhD%20Level-blue.svg)](https://ebooks.rtu.lv/wp-content/uploads/sites/32/2022/02/PD_Nidagundi_FINAL_A4.pdf)
+[![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Citations-red.svg)](https://scholar.google.com/citations?user=zZsnafMAAAAJ&hl=en)
+
 **Last Updated**: January 17, 2026  
-**Author**: Padmaraj Nidagundi, PhD Candidate in Computer Science  
+**Author**: Padmaraj Nidagundi, PhD in Computer Science  
 **Institution**: Riga Technical University, Faculty of Computer Science  
 **Reading Time**: 8 minutes
 
@@ -32,7 +38,7 @@ A **test strategy** is a comprehensive outline that describes the systematic tes
 
 ## About the Author
 
-### Padmaraj Nidagundi, PhD Candidate
+### Padmaraj Nidagundi, PhD 
 **Credentials & Expertise**:
 - PhD Student, Faculty of Computer Science, Riga Technical University (RTU)
 - 10+ peer-reviewed publications in software testing methodologies
@@ -359,8 +365,7 @@ This framework and associated templates are provided as open educational resourc
 
 ---
 
-**Document Version**: 2.0 (E-E-A-T Optimized)  
 **Last Reviewed**: January 17, 2026  
-**Maintained By**: Padmaraj Nidagundi, PhD Candidate, RTU
+**Maintained By**: Padmaraj Nidagundi, PhD, RTU
 
 
