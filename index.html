@@ -133,6 +133,161 @@
 
     <button onclick="toggleHighlight()">Toggle Highlight</button>
 
+    <h2 style="text-align: center; margin-top: 40px; color: #333;">AI Testing Strategy Canvas</h2>
+    <p style="text-align: center;">Specialized approach for testing AI/ML systems and AI-augmented applications</p>
+
+    <div class="canvas">
+        <div class="box" style="background-color: #fff3e0;">
+            <h3>AI Testing Challenges</h3>
+            <ul>
+                <li>Non-deterministic outputs</li>
+                <li>Black-box model behavior</li>
+                <li>Bias and fairness issues</li>
+                <li>Data quality validation</li>
+                <li>Model drift detection</li>
+            </ul>
+        </div>
+        <div class="box" style="background-color: #e3f2fd;">
+            <h3>AI Testing Solutions</h3>
+            <ul>
+                <li>Statistical validation frameworks</li>
+                <li>Explainable AI (XAI) tools</li>
+                <li>Adversarial testing</li>
+                <li>Continuous monitoring pipelines</li>
+                <li>Synthetic data generation</li>
+            </ul>
+        </div>
+        <div class="box" style="background-color: #f3e5f5;">
+            <h3>AI Quality Metrics</h3>
+            <ul>
+                <li>Model Accuracy & Precision</li>
+                <li>Fairness Metrics (Disparate Impact)</li>
+                <li>Inference Latency</li>
+                <li>Data Drift Score</li>
+                <li>Explainability Index</li>
+            </ul>
+        </div>
+        <div class="box" style="background-color: #e8f5e9;">
+            <h3>Testing Automation Tools</h3>
+            <ul>
+                <li>TensorFlow Model Analysis</li>
+                <li>MLflow for experiment tracking</li>
+                <li>Great Expectations for data</li>
+                <li>DeepChecks for validation</li>
+                <li>Evidently AI for monitoring</li>
+            </ul>
+        </div>
+        <div class="box" style="background-color: #fce4ec;">
+            <h3>Test Data Strategy</h3>
+            <ul>
+                <li>Edge case generation</li>
+                <li>Synthetic data creation</li>
+                <li>Data augmentation techniques</li>
+                <li>Privacy-preserving test data</li>
+                <li>Diverse dataset curation</li>
+            </ul>
+        </div>
+        <div class="box" style="background-color: #fff9c4;">
+            <h3>Model Validation</h3>
+            <ul>
+                <li>Cross-validation strategies</li>
+                <li>A/B testing frameworks</li>
+                <li>Shadow mode deployment</li>
+                <li>Champion/Challenger testing</li>
+                <li>Regression testing for updates</li>
+            </ul>
+        </div>
+        <div class="box" style="background-color: #e0f2f1;">
+            <h3>Risk Assessment</h3>
+            <ul>
+                <li>Bias amplification risks</li>
+                <li>Security vulnerabilities</li>
+                <li>Performance degradation</li>
+                <li>Regulatory compliance gaps</li>
+                <li>Ethical considerations</li>
+            </ul>
+        </div>
+        <div class="box" style="background-color: #ede7f6;">
+            <h3>Stakeholders</h3>
+            <ul>
+                <li>ML Engineers</li>
+                <li>Data Scientists</li>
+                <li>QA Specialists</li>
+                <li>Ethics Reviewers</li>
+                <li>Compliance Officers</li>
+            </ul>
+        </div>
+        <div class="box" style="background-color: #ffebee;">
+            <h3>Continuous Monitoring</h3>
+            <ul>
+                <li>Real-time performance tracking</li>
+                <li>Anomaly detection systems</li>
+                <li>User feedback loops</li>
+                <li>Model retraining triggers</li>
+                <li>Incident response protocols</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 style="text-align: center; margin-top: 40px; color: #333;">AI Testing Approaches (2026)</h2>
+    <div style="max-width: 1200px; margin: 20px auto;">
+        <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #4CAF50; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0; color: #4CAF50;">1. Metamorphic Testing</h3>
+            <p><strong>Purpose:</strong> Address oracle problem in AI systems where expected outputs are unknown.</p>
+            <p><strong>Approach:</strong> Define metamorphic relations between inputs and outputs. For example, if adding noise to an image shouldn't drastically change classification, test this property rather than exact outputs.</p>
+            <p><strong>Tools:</strong> Custom frameworks, MetamorphicTesting.py libraries</p>
+        </div>
+
+        <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #2196F3; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0; color: #2196F3;">2. Adversarial Testing</h3>
+            <p><strong>Purpose:</strong> Identify vulnerabilities by intentionally trying to fool AI models.</p>
+            <p><strong>Approach:</strong> Generate adversarial examples using techniques like FGSM, PGD, or C&W attacks. Test model robustness against perturbations.</p>
+            <p><strong>Tools:</strong> CleverHans, Foolbox, Adversarial Robustness Toolbox (ART)</p>
+        </div>
+
+        <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #FF9800; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0; color: #FF9800;">3. Fairness & Bias Testing</h3>
+            <p><strong>Purpose:</strong> Ensure AI models don't discriminate against protected groups.</p>
+            <p><strong>Approach:</strong> Measure disparate impact, equal opportunity, demographic parity across sensitive attributes. Test with diverse datasets representing all user groups.</p>
+            <p><strong>Tools:</strong> Fairlearn, AI Fairness 360, What-If Tool</p>
+        </div>
+
+        <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #9C27B0; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0; color: #9C27B0;">4. Explainability Testing</h3>
+            <p><strong>Purpose:</strong> Verify that model decisions are interpretable and reasonable.</p>
+            <p><strong>Approach:</strong> Use SHAP, LIME, or attention visualization to understand feature importance. Test if explanations align with domain expertise.</p>
+            <p><strong>Tools:</strong> SHAP, LIME, InterpretML, Captum</p>
+        </div>
+
+        <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #F44336; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0; color: #F44336;">5. Performance & Load Testing</h3>
+            <p><strong>Purpose:</strong> Ensure AI systems meet latency and throughput requirements.</p>
+            <p><strong>Approach:</strong> Test inference time under varying loads, batch sizes, and concurrent requests. Profile GPU/CPU utilization.</p>
+            <p><strong>Tools:</strong> Locust, JMeter, TensorFlow Profiler, PyTorch Profiler</p>
+        </div>
+
+        <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #009688; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0; color: #009688;">6. Data Validation Testing</h3>
+            <p><strong>Purpose:</strong> Ensure training and inference data meets quality standards.</p>
+            <p><strong>Approach:</strong> Validate data schema, distributions, completeness, and consistency. Detect drift between training and production data.</p>
+            <p><strong>Tools:</strong> Great Expectations, TensorFlow Data Validation, Pandera</p>
+        </div>
+
+        <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #607D8B; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0; color: #607D8B;">7. Model Drift Monitoring</h3>
+            <p><strong>Purpose:</strong> Detect when model performance degrades over time.</p>
+            <p><strong>Approach:</strong> Continuously monitor prediction distributions, feature distributions, and performance metrics. Set up alerts for significant drift.</p>
+            <p><strong>Tools:</strong> Evidently AI, WhyLabs, Fiddler AI, Arize</p>
+        </div>
+
+        <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #795548; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <h3 style="margin-top: 0; color: #795548;">8. Integration Testing for AI Pipelines</h3>
+            <p><strong>Purpose:</strong> Validate end-to-end ML pipelines from data ingestion to prediction serving.</p>
+            <p><strong>Approach:</strong> Test data preprocessing, feature engineering, model inference, and post-processing steps. Verify API contracts and error handling.</p>
+            <p><strong>Tools:</strong> Pytest, MLflow, Kubeflow Pipelines, Airflow</p>
+        </div>
+    </div>
+
     <h2>Using Lean Canvas in the AI and MCP Era (2026)</h2>
     <p>In the rapidly evolving landscape of 2026, where AI and advanced model protocols like MCP (Model Context Protocol) are transforming software development, the Lean Canvas Test Strategy can be leveraged in innovative ways:</p>
     <ul>
