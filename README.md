@@ -1,4 +1,4 @@
-# AI-Powered Software Testing Strategy: Comprehensive Guide for 2026
+# AI Software Testing Strategy : Comprehensive Guide for 2026
 
 **Last Updated**: January 17, 2026  
 **Author**: Padmaraj Nidagundi, PhD Candidate in Computer Science  
