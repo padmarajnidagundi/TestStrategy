@@ -1,5 +1,6 @@
 # AI Software Testing Strategy : Comprehensive Guide for 2026
 
+
 🚀 **[Live Demo Available](https://padmarajnidagundi.github.io/TestStrategy/)** - Interactive AI Testing Strategy Dashboard
 
   
@@ -317,6 +318,50 @@ Comprehensive guide to industry-standard testing methodologies with practical im
 
   
 
+
+## Practical AI Testing Strategy: Evaluation, Prompts, Failures, and CI
+
+### 1. Evaluation Rubric & Gold Dataset Concept
+
+- **Rubric Example:**
+	- *Accuracy*: Does the AI output match the expected answer?
+	- *Relevance*: Is the response on-topic and useful?
+	- *Safety*: Does the output avoid harmful or inappropriate content?
+	- *Completeness*: Are all required elements present?
+- **Gold Dataset:**
+	- A curated set of input prompts and ground-truth outputs (Q&A pairs, expected completions, etc.) used to benchmark and regression-test the AI system.
+
+### 2. Recommended Prompts
+
+- "Summarize the main risks in this test plan."
+- "Generate test cases for login functionality."
+- "Explain why this test failed."
+- "Suggest improvements for this test strategy."
+- "Detect possible data leakage in this dataset."
+
+### 3. Failure Modes
+
+- **Hallucination:** AI generates plausible but incorrect or fabricated information (e.g., inventing requirements).
+- **Non-determinism:** The same prompt yields different outputs on repeated runs, causing flaky tests.
+- **Data Leakage:** The model uses information from the test set or future data, invalidating results.
+
+### 4. CI Checklist for AI Testing
+
+- [ ] Regression tests for all critical prompts and model versions
+- [ ] Traceability: Each prompt/test links to a requirement or user story
+- [ ] Evidence logging: Store model outputs, scores, and evaluation artifacts
+- [ ] Automated alerting for rubric score drops or new failure modes
+- [ ] Dashboard integration: Visualize test results and trends
+
+### 5. Linking to Dashboard/Prototype
+
+All rubric scores, prompt results, and CI checks are visualized in the [**Live AI Testing Strategy Dashboard**](https://padmarajnidagundi.github.io/TestStrategy/). This enables:
+- Real-time tracking of evaluation metrics
+- Drill-down into failed prompts and failure modes
+- Evidence and traceability logs for audits
+- Continuous improvement based on measurable outcomes
+
+---
 ## Using Lean Canvas in the AI and MCP Era (2026)
 
   
