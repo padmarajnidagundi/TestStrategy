@@ -66,17 +66,46 @@
             line-height: 1.6;
             color: #333;
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav {
+            padding: 15px 0;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .nav-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+        
         /* Content Sections */
         section {
-            margin: 60px 0;
+            margin: 40px 0;
+        }
+        @media (min-width: 768px) {
+            section {
+                margin: 60px 0;
+            }
         }
         h2 {
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             color: #333;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             text-align: center;
             position: relative;
             padding-bottom: 15px;
+        }
+        @media (min-width: 768px) {
+            h2 {
+                font-size: 2.5rem;
+                margin-bottom: 30px;
+            }
         }
         h2::after {
             content: '';
@@ -93,9 +122,19 @@
         /* Canvas Grid */
         .canvas {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
             margin: 40px auto;
+        }
+        @media (min-width: 768px) {
+            .canvas {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            .canvas {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
         .box {
             background: white;
@@ -108,15 +147,47 @@
         }
         .box:hover {
             transform: translateY(-5px);
+        }
+        
+        /* Button Styles */
+        button {
+            padding: 12px 24px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            min-height: 44px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+        @media (hover: hover) {
+            button:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+            }
+        }
+        button:active {
+            transform: translateY(0);
+        }
+        
         /* Author Section */
         .author-section {
             background: white;
-            border-radius: 20px;
-            padding: 50px;
-            margin: 60px auto;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px auto;
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
             position: relative;
             overflow: hidden;
+        }
+        @media (min-width: 768px) {
+            .author-section {
+                border-radius: 20px;
+                padding: 50px;
+                margin: 60px auto;
+            }
         }
         .author-section::before {
             content: '';
@@ -144,14 +215,20 @@
         }
         .author-section h3 {
             color: #667eea;
-            font-size: 2rem;
-            margin: 20px 0;
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+        @media (min-width: 768px) {
+            .author-section h3 {
+                font-size: 2rem;
+                margin: 20px 0;
+            }
         }
      !-- Navigation -->
     <nav>
         <div class="container">
             <div class="nav-brand">🧪 AI Testing Strategy</div>
-            <h2>📖 About the Expert</h2>
+            <h2>About the Expert</h2>
             <h3>Dr. Padmaraj Nidagundi, PhD</h3>
             <p style="font-size: 1.1rem; color: #666; line-height: 1.8;">Leading researcher in AI software testing methodologies and test strategy design. Pioneering work in adapting Lean Canvas frameworks for AI test automation and AI test management in modern DevOps environments.</p>
             
@@ -239,34 +316,59 @@
         /* Approach Cards */
         .approach-card {
             background: white;
-            padding: 30px;
-            margin-bottom: 25px;
-            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.08);
             border-left: 5px solid;
             transition: all 0.3s;
         }
-        .approach-card:hover {
-            transform: translateX(10px);
-            box-shadow: 0 6px 30px rgba(0,0,0,0.12);
+        @media (min-width: 768px) {
+            .approach-card {
+                padding: 30px;
+                margin-bottom: 25px;
+                border-radius: 15px;
+            }
+            .approach-card:hover {
+                transform: translateX(10px);
+                box-shadow: 0 6px 30px rgba(0,0,0,0.12);
+            }
         }
         .approach-card h3 {
             margin-top: 0;
-            font-size: 1.6rem;
-            margin-bottom: 15px;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+        @media (min-width: 768px) {
+            .approach-card h3 {
+                font-size: 1.6rem;
+                margin-bottom: 15px;
+            }
         }
         .approach-card p {
             margin: 10px 0;
             line-height: 1.8;
+            font-size: 0.95rem;
+        }
+        @media (min-width: 768px) {
+            .approach-card p {
+                font-size: 1rem;
+            }
         }
         
         /* Footer */
         footer {
             background: #2c3e50;
             color: white;
-            padding: 40px 20px;
-            margin-top: 80px;
+            padding: 30px 20px;
+            margin-top: 50px;
             text-align: center;
+        }
+        @media (min-width: 768px) {
+            footer {
+                padding: 40px 20px;
+                margin-top: 80px;
+            }
         }
         footer a {
             color: #ffd700;
@@ -284,60 +386,121 @@
         }
         
         /* Responsive */
-        @media (max-width: 768px) {
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.8rem; }
-            .canvas { grid-template-columns: 1fr; }
-            .author-grid { grid-template-columns: 1fr; }
-            .hero { padding: 50px 20px; }
-            .nav-links { display: none; }
-            .author-section { padding: 30px 20px; }0;
+        @media (max-width: 767px) {
+            .canvas { 
+                grid-template-columns: 1fr; 
+                gap: 15px;
+                margin: 20px auto;
+            }
+            .author-grid { 
+                grid-template-columns: 1fr; 
+            }
+            .box {
+                padding: 20px;
+                min-height: auto;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .stat-item span {
+                font-size: 0.9rem;
+            }
             box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
             transition: all 0.3s;
+            min-height: 44px;
+            font-size: 1rem;
         }
-        button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4)
+        @media (hover: hover) {
+            button:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+            }
+        }
+        button:active {
+            transform: translateY(0);
         }
         
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 80px 20px;
+            padding: 60px 20px;
             text-align: center;
-            margin-bottom: 50px;
-            border-radius: 0 0 50px 50px;
+            margin-bottom: 30px;
+            border-radius: 0 0 30px 30px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
+        @media (min-width: 768px) {
+            .hero {
+                padding: 80px 20px;
+                margin-bottom: 50px;
+                border-radius: 0 0 50px 50px;
+            }
+        }
         h1 {
-            font-size: 3rem;
+            font-size: 2rem;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
             line-height: 1.2;
         }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+        }
         .hero p {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             margin-bottom: 15px;
             opacity: 0.95;
+        }
+        @media (min-width: 768px) {
+            .hero p {
+                font-size: 1.3rem;
+            }
         }
         .hero-stats {
             display: flex;
             justify-content: center;
-            gap: 40px;
-            margin-top: 30px;
+            gap: 20px;
+            margin-top: 20px;
             flex-wrap: wrap;
+        }
+        @media (min-width: 768px) {
+            .hero-stats {
+                gap: 40px;
+                margin-top: 30px;
+            }
         }
         .stat-item {
             background: rgba(255, 255, 255, 0.15);
-            padding: 15px 30px;
+            padding: 12px 20px;
             border-radius: 10px;
             backdrop-filter: blur(10px);
+            min-width: 100px;
+        }
+        @media (min-width: 768px) {
+            .stat-item {
+                padding: 15px 30px;
+            }
         }
         .stat-item strong {
             display: block;
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: #ffd700;
+        }
+        @media (min-width: 768px) {
+            .stat-item strong {
+                font-size: 2rem;
+            }
         }
         .cta-buttons {
             margin-top: 30px;
@@ -425,9 +588,9 @@
             </div>
 
             <div class="approach-card" style="border-left-color: #607D8B;">
-                <p><strong>Purpose:</strong> Advanced AI test management to detect when AI model performance degrades over time due to data drift or concept drift.</p>
-                <p><strong>AI Test Automation Approach:</strong> Continuously monitor prediction distributions, feature distributions, and performance metrics in production AI systems. Automated alerts for significant drift. Essential AI testing strategy for MLOps and continuous AI validation.</p>
-                <p><strong>Tools & Frameworks:</strong> Evidently AI, WhyLabs, Fiddler AI, Arize, Amazon SageMaker Model Monitor</p>
+                <p><strong>Purpose :</strong> Advanced AI test management to detect when AI model performance degrades over time due to data drift or concept drift.</p>
+                <p><strong>AI Test Automation Approach :</strong> Continuously monitor prediction distributions, feature distributions, and performance metrics in production AI systems. Automated alerts for significant drift. Essential AI testing strategy for MLOps and continuous AI validation.</p>
+                <p><strong>Tools & Frameworks :</strong> Evidently AI, WhyLabs, Fiddler AI, Arize, Amazon SageMaker Model Monitor</p>
                 <p><strong>Best For:</strong> Production AI monitoring, MLOps pipelines, continuous model validation</p>
             </div>
 
@@ -619,6 +782,17 @@
                 <li>User feedback loops</li>
                 <li>Model retraining triggers</li>
                 <li>Incident response protocols</li>
+            </ul>
+        </div>
+        <!-- Practical AI Testing Examples Box -->
+        <div class="box" style="background-color: #e1f5fe;">
+            <h3>Practical AI Testing Examples</h3>
+            <ul>
+                <li><strong>Sample Prompt:</strong> "Summarize the main risks in this test plan."</li>
+                <li><strong>Rubric:</strong> Accuracy, Relevance, Safety, Completeness</li>
+                <li><strong>Gold Dataset:</strong> Curated Q&A pairs for regression</li>
+                <li><strong>Failure Modes:</strong> Hallucination, Non-determinism, Data Leakage</li>
+                <li><strong>CI Checklist:</strong> Regression tests, traceability, evidence logging</li>
             </ul>
         </div>
     </div>
