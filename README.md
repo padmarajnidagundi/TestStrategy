@@ -386,7 +386,6 @@ In 2026, the convergence of Artificial Intelligence (AI) and Model Context Proto
 
 - **Human-in-the-Loop Guardrails**: Enforce confidence thresholds and approval gates for high-impact AI decisions.
 
-  
 
 ### AI-Powered Testing Capabilities
 
