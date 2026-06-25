@@ -403,6 +403,8 @@ Modern AI systems analyze codebases, historical defect patterns, and user behavi
 
 - Create adaptive test suites that evolve with the application
 
+- Tooling in 2026 commonly includes Promptfoo, DeepEval, and LangSmith evaluation workflows
+
   
 
 **Real-World Impact**: Industry reports in 2026 continue to show major gains from AI-assisted testing, including significant reductions in manual test authoring effort and faster risk detection cycles.
@@ -420,6 +422,8 @@ MCP enables seamless communication between AI models and testing infrastructure:
 -  **Standardized Communication**: Consistent protocol for integrating diverse testing tools and AI platforms
 
 -  **Enhanced Visualization**: Dynamic dashboards that update in real-time with AI-driven insights
+
+-  **Practical Tooling**: MCP servers connected to CI pipelines, issue trackers, and observability stacks
 
   
 
@@ -449,6 +453,8 @@ AI-powered tools assist teams in:
 
 -  **Knowledge Management**: Extract and organize testing knowledge from past projects
 
+-  **Common Platforms**: GitHub Copilot coding agent, Claude Code, and Gemini-based assistant workflows
+
   
 
 #### 5. **Advanced Visualization and Analytics**
@@ -462,6 +468,8 @@ Interactive, AI-driven dashboards provide:
 - Automated root cause analysis
 
 - Multi-dimensional test metrics visualization
+
+- LLM observability with Arize Phoenix, WhyLabs, and Evidently AI
 
   
 
@@ -481,7 +489,7 @@ Open [index.html](index.html) to explore the interactive Lean Canvas testing fra
 
 2.  **Integrate AI Tools**
 
-Connect AI platforms (OpenAI, Anthropic, local LLMs) for intelligent test analysis and generation
+Connect AI platforms (OpenAI, Anthropic, local LLMs) plus Promptfoo/DeepEval/LangSmith for intelligent test analysis, evaluation, and generation
 
   
 
