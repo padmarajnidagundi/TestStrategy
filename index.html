@@ -548,56 +548,56 @@
         <section id="approaches">
                 <p><strong>Purpose:</strong> Solve the oracle problem in AI software testing where expected outputs are unknown for machine learning models.</p>
                 <p><strong>AI Test Automation Approach:</strong> Define metamorphic relations between inputs and outputs. In AI testing strategy, if adding noise to an image shouldn't drastically change classification, test this property rather than exact outputs. Essential for AI test management and continuous validation.</p>
-                <p><strong>Tools & Frameworks:</strong> Custom metamorphic testing frameworks, MetamorphicTesting.py libraries, automated test case generation</p>
+                <p><strong>Tools & Frameworks:</strong> DeepEval relation checks, Promptfoo assertions, custom metamorphic test harnesses, automated test case generation</p>
                 <p><strong>Best For:</strong> AI software testing scenarios with non-deterministic outputs, ML model validation, neural network testing</p>
             </div>
 
             <div class="approach-card" style="border-left-color: #2196F3;">
                 <p><strong>Purpose:</strong> Critical AI testing strategy to identify security vulnerabilities by intentionally attempting to fool AI models and compromise AI systems.</p>
                 <p><strong>AI Test Automation Approach:</strong> Generate adversarial examples using advanced techniques like FGSM (Fast Gradient Sign Method), PGD (Projected Gradient Descent), or C&W attacks. Automated AI test management for model robustness against perturbations and adversarial attacks.</p>
-                <p><strong>Tools & Frameworks:</strong> CleverHans, Foolbox, Adversarial Robustness Toolbox (ART), custom adversarial test generators</p>
+                <p><strong>Tools & Frameworks:</strong> Garak, Promptfoo red-team suites, Adversarial Robustness Toolbox (ART), custom adversarial test generators</p>
                 <p><strong>Best For:</strong> AI security testing, ML model robustness validation, defense against AI attacks</p>
             </div>
 
             <div class="approach-card" style="border-left-color: #FF9800;">
                 <p><strong>Purpose:</strong> Essential AI testing strategy to ensure AI models don't discriminate against protected groups and maintain ethical AI standards.</p>
                 <p><strong>AI Software Testing Approach:</strong> Measure disparate impact, equal opportunity, and demographic parity across sensitive attributes. AI test automation for bias detection with diverse datasets representing all user groups. Critical component of AI test management frameworks.</p>
-                <p><strong>Tools & Frameworks:</strong> Fairlearn, IBM AI Fairness 360, Google What-If Tool, Aequitas</p>
+                <p><strong>Tools & Frameworks:</strong> Fairlearn, IBM AI Fairness 360, Aequitas, Holistic AI</p>
                 <p><strong>Best For:</strong> AI ethics validation, regulatory compliance testing, responsible AI deployment</p>
             </div>
 
             <div class="approach-card" style="border-left-color: #9C27B0;">
                 <p><strong>Purpose:</strong> Advanced AI testing strategy to verify that AI model decisions are interpretable, reasonable, and aligned with business logic.</p>
                 <p><strong>AI Test Automation Approach:</strong> Use SHAP (SHapley Additive exPlanations), LIME (Local Interpretable Model-agnostic Explanations), or attention visualization to understand feature importance in AI systems. Automated testing if explanations align with domain expertise and business requirements.</p>
-                <p><strong>Tools & Frameworks:</strong> SHAP, LIME, InterpretML, Captum, ELI5</p>
+                <p><strong>Tools & Frameworks:</strong> SHAP, Captum, InterpretML, TruLens, Arize Phoenix traces</p>
                 <p><strong>Best For:</strong> AI model validation, regulatory compliance, trustworthy AI deployment</p>
             </div>
 
             <div class="approach-card" style="border-left-color: #F44336;">
                 <p><strong>Purpose:</strong> Critical AI test management approach to ensure AI systems meet latency, throughput, and scalability requirements in production environments.</p>
                 <p><strong>AI Test Automation Approach:</strong> Test inference time under varying loads, batch sizes, and concurrent requests. Automated AI software testing for GPU/CPU utilization, memory consumption, and model serving performance. Essential for AI test management in production.</p>
-                <p><strong>Tools & Frameworks:</strong> Locust, Apache JMeter, TensorFlow Profiler, PyTorch Profiler, NVIDIA Nsight</p>
+                <p><strong>Tools & Frameworks:</strong> k6, Locust, PyTorch Profiler, NVIDIA Nsight, Triton Perf Analyzer</p>
                 <p><strong>Best For:</strong> Production AI deployment, scalability testing, cloud AI service validation</p>
             </div>
 
             <div class="approach-card" style="border-left-color: #009688;">
                 <p><strong>Purpose:</strong> Fundamental AI testing strategy to ensure training and inference data meets quality standards for reliable AI model performance.</p>
                 <p><strong>AI Test Automation Approach:</strong> Validate data schema, distributions, completeness, and consistency in AI pipelines. Automated detection of drift between training and production data. Core component of AI test management for data-driven systems.</p>
-                <p><strong>Tools & Frameworks:</strong> Great Expectations, TensorFlow Data Validation (TFDV), Pandera, Deequ</p>
+                <p><strong>Tools & Frameworks:</strong> Great Expectations, Soda Core, Pandera, Deequ</p>
                 <p><strong>Best For:</strong> ML pipeline testing, data quality assurance, AI model reliability</p>
             </div>
 
             <div class="approach-card" style="border-left-color: #607D8B;">
                 <p><strong>Purpose :</strong> Advanced AI test management to detect when AI model performance degrades over time due to data drift or concept drift.</p>
                 <p><strong>AI Test Automation Approach :</strong> Continuously monitor prediction distributions, feature distributions, and performance metrics in production AI systems. Automated alerts for significant drift. Essential AI testing strategy for MLOps and continuous AI validation.</p>
-                <p><strong>Tools & Frameworks :</strong> Evidently AI, WhyLabs, Fiddler AI, Arize, Amazon SageMaker Model Monitor</p>
+                <p><strong>Tools & Frameworks :</strong> Evidently AI, WhyLabs, Arize Phoenix, Fiddler AI, SageMaker Model Monitor</p>
                 <p><strong>Best For:</strong> Production AI monitoring, MLOps pipelines, continuous model validation</p>
             </div>
 
             <div class="approach-card" style="border-left-color: #795548;">
                 <p><strong>Purpose:</strong> Comprehensive AI testing strategy to validate end-to-end ML pipelines from data ingestion to prediction serving in production environments.</p>
                 <p><strong>AI Test Automation Approach:</strong> Test data preprocessing, feature engineering, model inference, and post-processing steps in AI pipelines. Verify API contracts, error handling, and system integration. Critical for AI test management in MLOps workflows.</p>
-                <p><strong>Tools & Frameworks:</strong> Pytest, MLflow, Kubeflow Pipelines, Apache Airflow, Jenkins for ML</p>
+                <p><strong>Tools & Frameworks:</strong> Pytest, LangSmith evals, MLflow, Kubeflow Pipelines, GitHub Actions</p>
                 <p><strong>Best For:</strong> MLOps validation, end-to-end AI system testing, production deployment verification</p>
             </div>
         </section>
@@ -622,6 +622,9 @@
                     </li>
                     <li style="padding: 15px; margin: 10px 0; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #667eea;">
                         <strong>👥 Human-in-the-Loop Guardrails:</strong> Add confidence thresholds and approval gates for high-impact AI decisions.
+                    </li>
+                    <li style="padding: 15px; margin: 10px 0; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #764ba2;">
+                        <strong>🖼️ Multimodal Reliability Testing:</strong> Validate image, audio, and document pipelines for grounding quality, safety, and latency.
                     </li>
                 </ul>
                 <p style="font-size: 1.1rem; margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px; text-align: center;">
@@ -727,11 +730,11 @@
         <div class="box" style="background-color: #e8f5e9;">
             <h3>Testing Automation Tools</h3>
             <ul>
-                <li>TensorFlow Model Analysis</li>
-                <li>MLflow for experiment tracking</li>
-                <li>Great Expectations for data</li>
-                <li>DeepChecks for validation</li>
-                <li>Evidently AI for monitoring</li>
+                <li>Promptfoo / DeepEval for LLM evals</li>
+                <li>LangSmith for trace-based testing</li>
+                <li>Great Expectations / Soda for data quality</li>
+                <li>Garak for adversarial safety checks</li>
+                <li>Arize Phoenix / Evidently for monitoring</li>
             </ul>
         </div>
         <div class="box" style="background-color: #fce4ec;">
@@ -803,56 +806,56 @@
             <h3 style="margin-top: 0; color: #4CAF50;">1. Metamorphic Testing</h3>
             <p><strong>Purpose:</strong> Address oracle problem in AI systems where expected outputs are unknown.</p>
             <p><strong>Approach:</strong> Define metamorphic relations between inputs and outputs. For example, if adding noise to an image shouldn't drastically change classification, test this property rather than exact outputs.</p>
-            <p><strong>Tools:</strong> Custom frameworks, MetamorphicTesting.py libraries</p>
+            <p><strong>Tools:</strong> DeepEval relation checks, Promptfoo assertions, custom metamorphic harnesses</p>
         </div>
 
         <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #2196F3; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
             <h3 style="margin-top: 0; color: #2196F3;">2. Adversarial Testing</h3>
             <p><strong>Purpose:</strong> Identify vulnerabilities by intentionally trying to fool AI models.</p>
             <p><strong>Approach:</strong> Generate adversarial examples using techniques like FGSM, PGD, or C&W attacks. Test model robustness against perturbations.</p>
-            <p><strong>Tools:</strong> CleverHans, Foolbox, Adversarial Robustness Toolbox (ART)</p>
+            <p><strong>Tools:</strong> Garak, Promptfoo red-team suites, Adversarial Robustness Toolbox (ART)</p>
         </div>
 
         <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #FF9800; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
             <h3 style="margin-top: 0; color: #FF9800;">3. Fairness & Bias Testing</h3>
             <p><strong>Purpose:</strong> Ensure AI models don't discriminate against protected groups.</p>
             <p><strong>Approach:</strong> Measure disparate impact, equal opportunity, demographic parity across sensitive attributes. Test with diverse datasets representing all user groups.</p>
-            <p><strong>Tools:</strong> Fairlearn, AI Fairness 360, What-If Tool</p>
+            <p><strong>Tools:</strong> Fairlearn, AI Fairness 360, Aequitas, Holistic AI</p>
         </div>
 
         <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #9C27B0; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
             <h3 style="margin-top: 0; color: #9C27B0;">4. Explainability Testing</h3>
             <p><strong>Purpose:</strong> Verify that model decisions are interpretable and reasonable.</p>
             <p><strong>Approach:</strong> Use SHAP, LIME, or attention visualization to understand feature importance. Test if explanations align with domain expertise.</p>
-            <p><strong>Tools:</strong> SHAP, LIME, InterpretML, Captum</p>
+            <p><strong>Tools:</strong> SHAP, Captum, InterpretML, TruLens, Arize Phoenix traces</p>
         </div>
 
         <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #F44336; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
             <h3 style="margin-top: 0; color: #F44336;">5. Performance & Load Testing</h3>
             <p><strong>Purpose:</strong> Ensure AI systems meet latency and throughput requirements.</p>
             <p><strong>Approach:</strong> Test inference time under varying loads, batch sizes, and concurrent requests. Profile GPU/CPU utilization.</p>
-            <p><strong>Tools:</strong> Locust, JMeter, TensorFlow Profiler, PyTorch Profiler</p>
+            <p><strong>Tools:</strong> k6, Locust, Triton Perf Analyzer, PyTorch Profiler</p>
         </div>
 
         <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #009688; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
             <h3 style="margin-top: 0; color: #009688;">6. Data Validation Testing</h3>
             <p><strong>Purpose:</strong> Ensure training and inference data meets quality standards.</p>
             <p><strong>Approach:</strong> Validate data schema, distributions, completeness, and consistency. Detect drift between training and production data.</p>
-            <p><strong>Tools:</strong> Great Expectations, TensorFlow Data Validation, Pandera</p>
+            <p><strong>Tools:</strong> Great Expectations, Soda Core, Pandera, Deequ</p>
         </div>
 
         <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #607D8B; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
             <h3 style="margin-top: 0; color: #607D8B;">7. Model Drift Monitoring</h3>
             <p><strong>Purpose:</strong> Detect when model performance degrades over time.</p>
             <p><strong>Approach:</strong> Continuously monitor prediction distributions, feature distributions, and performance metrics. Set up alerts for significant drift.</p>
-            <p><strong>Tools:</strong> Evidently AI, WhyLabs, Fiddler AI, Arize</p>
+            <p><strong>Tools:</strong> Evidently AI, WhyLabs, Arize Phoenix, Fiddler AI</p>
         </div>
 
         <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-left: 4px solid #795548; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
             <h3 style="margin-top: 0; color: #795548;">8. Integration Testing for AI Pipelines</h3>
             <p><strong>Purpose:</strong> Validate end-to-end ML pipelines from data ingestion to prediction serving.</p>
             <p><strong>Approach:</strong> Test data preprocessing, feature engineering, model inference, and post-processing steps. Verify API contracts and error handling.</p>
-            <p><strong>Tools:</strong> Pytest, MLflow, Kubeflow Pipelines, Airflow</p>
+            <p><strong>Tools:</strong> Pytest, LangSmith evals, MLflow, Kubeflow Pipelines, GitHub Actions</p>
         </div>
     </div>
 
@@ -864,6 +867,7 @@
         <li><strong>Risk & Compliance by Design:</strong> Align quality evidence to EU AI Act, NIST AI RMF, and ISO/IEC 42001 control objectives.</li>
         <li><strong>EvaluationOps & Traceability:</strong> Version prompts, datasets, rubrics, and model snapshots for reproducible audits.</li>
         <li><strong>Human Oversight Gates:</strong> Require reviewer approval for high-impact decisions when confidence or policy thresholds are not met.</li>
+        <li><strong>Multimodal Reliability Testing:</strong> Validate image/audio/document AI flows for grounding quality, safety, and latency in production.</li>
     </ul>
     <p>Anyone can start by adapting this template: Download the canvas, input your project specifics, and use AI tools to analyze and optimize your test strategy iteratively.</p>
 
