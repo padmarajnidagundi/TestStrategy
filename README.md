@@ -16,12 +16,13 @@ This repository hosts a single-page Lean Canvas and twelve test strategy example
 - One-page business model overview
 - Featured AI Agents test strategy Lean Canvas example
 - Twelve Lean Canvas examples with problem, solution, and impact
+- Full nine-block Lean Canvas example based on the doctoral thesis case
 - Supporting visual asset for the initiative
 - Simple project documentation
 
 ## Project Files
 
-- `index.html` — one-page Lean Canvas plus twelve test strategy examples
+- `index.html` — one-page Lean Canvas with twelve test strategy examples and one full thesis-based nine-block board
 - `README.md` — project overview and usage information
 - `Lean_Canvas_Test_Strategy_Dashboard.jpg` — dashboard image asset
 - `PD_Nidagundi_FINAL_A4.pdf` — supporting project document
