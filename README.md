@@ -14,6 +14,7 @@ This repository hosts a single-page Lean Canvas and seven test strategy example 
 
 - Public GitHub Pages Lean Canvas page
 - One-page business model overview
+- Featured AI Agents test strategy Lean Canvas example
 - Seven Lean Canvas examples with problem, solution, and impact
 - Supporting visual asset for the initiative
 - Simple project documentation
