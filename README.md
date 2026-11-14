@@ -1,6 +1,6 @@
 # TestStrategy
 
-A public-facing project for an AI testing strategy dashboard and supporting project assets.
+A public-facing Lean Canvas page for an AI testing strategy dashboard and supporting project assets.
 
 ## Live Demo
 
@@ -8,18 +8,18 @@ A public-facing project for an AI testing strategy dashboard and supporting proj
 
 ## Overview
 
-This repository hosts a streamlined landing page and supporting materials for a testing strategy dashboard. The goal is to present the project clearly and professionally in a public GitHub Pages experience without carrying unnecessary legacy content.
+This repository hosts a single-page Lean Canvas and supporting materials for a testing strategy dashboard. The goal is to present the business model clearly in a clean GitHub Pages experience.
 
 ## Included
 
-- Public GitHub Pages landing page
-- Dashboard-focused project overview
+- Public GitHub Pages Lean Canvas page
+- One-page business model overview
 - Supporting visual asset for the initiative
 - Simple project documentation
 
 ## Project Files
 
-- `index.html` — public landing page for the project
+- `index.html` — one-page Lean Canvas for the project
 - `README.md` — project overview and usage information
 - `Lean_Canvas_Test_Strategy_Dashboard.jpg` — dashboard image asset
 - `PD_Nidagundi_FINAL_A4.pdf` — supporting project document

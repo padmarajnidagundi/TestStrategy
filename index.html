@@ -3,112 +3,213 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TestStrategy</title>
+    <title>TestStrategy Lean Canvas</title>
     <style>
       :root {
-        --bg: #0f172a;
-        --panel: #111827;
-        --panel-alt: #1f2937;
-        --text: #e5e7eb;
-        --muted: #94a3b8;
-        --accent: #60a5fa;
-        --accent-2: #34d399;
+        --bg: #f8fafc;
+        --panel: #ffffff;
+        --border: #dbe2ea;
+        --text: #0f172a;
+        --muted: #475569;
+        --accent: #1d4ed8;
       }
-      * { box-sizing: border-box; }
+      * {
+        box-sizing: border-box;
+      }
       body {
         margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(180deg, #020817 0%, #0f172a 100%);
+        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+        background: var(--bg);
         color: var(--text);
-        line-height: 1.6;
+        line-height: 1.45;
       }
-      .container {
-        max-width: 960px;
+      main {
+        max-width: 1280px;
         margin: 0 auto;
-        padding: 48px 20px 80px;
+        padding: 24px 16px 40px;
       }
-      .card {
-        background: rgba(17, 24, 39, 0.9);
-        border: 1px solid rgba(148, 163, 184, 0.2);
-        border-radius: 16px;
-        padding: 32px;
-        box-shadow: 0 20px 60px rgba(15, 23, 42, 0.4);
+      header {
+        margin-bottom: 20px;
       }
-      h1 {
-        margin-top: 0;
-        font-size: clamp(2.2rem, 5vw, 3.5rem);
-        line-height: 1.1;
-      }
-      h2 {
-        margin-top: 2rem;
-        font-size: 1.45rem;
-      }
-      p, li {
-        color: var(--text);
-      }
-      .badge {
-        display: inline-block;
-        margin: 0 6px 12px 0;
-        padding: 8px 12px;
-        border-radius: 999px;
-        background: rgba(96, 165, 250, 0.12);
-        border: 1px solid rgba(96, 165, 250, 0.3);
+      header h1 {
+        margin: 0 0 6px;
+        font-size: clamp(1.6rem, 2.7vw, 2.4rem);
         color: var(--accent);
-        font-size: 0.83rem;
-        font-weight: 600;
       }
-      a {
-        color: var(--accent-2);
-      }
-      ul {
-        padding-left: 20px;
-      }
-      .meta {
+      header p {
+        margin: 0;
         color: var(--muted);
-        margin: 16px 0 24px;
       }
+
+      .canvas {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .block {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 14px 14px 12px;
+        min-height: 170px;
+      }
+
+      .block h2 {
+        margin: 0 0 10px;
+        font-size: 1rem;
+        color: var(--accent);
+      }
+
+      .block ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+
+      .block li {
+        margin: 0 0 6px;
+      }
+
       footer {
-        margin-top: 32px;
+        margin-top: 14px;
         color: var(--muted);
-        font-size: 0.95rem;
+        font-size: 0.88rem;
+      }
+
+      @media (min-width: 980px) {
+        .canvas {
+          grid-template-columns: repeat(5, minmax(0, 1fr));
+          grid-template-areas:
+            "problem solution unique advantage channels"
+            "segments metrics unique advantage channels"
+            "cost cost revenue revenue revenue";
+        }
+
+        .problem {
+          grid-area: problem;
+        }
+        .solution {
+          grid-area: solution;
+        }
+        .unique {
+          grid-area: unique;
+        }
+        .advantage {
+          grid-area: advantage;
+        }
+        .channels {
+          grid-area: channels;
+        }
+        .segments {
+          grid-area: segments;
+        }
+        .metrics {
+          grid-area: metrics;
+        }
+        .cost {
+          grid-area: cost;
+          min-height: 150px;
+        }
+        .revenue {
+          grid-area: revenue;
+          min-height: 150px;
+        }
       }
     </style>
   </head>
   <body>
-    <main class="container">
-      <div class="card">
-        <div>
-          <span class="badge">Live Demo</span>
-          <span class="badge">GitHub Pages</span>
-        </div>
-        <h1>TestStrategy</h1>
-        <p class="meta">Public dashboard project for AI testing strategy resources.</p>
+    <main>
+      <header>
+        <h1>Lean Canvas — TestStrategy Dashboard</h1>
+        <p>One-page business model for the AI-powered test strategy dashboard initiative.</p>
+      </header>
 
-        <p>
-          <strong>Live demo:</strong>
-          <a href="https://padmarajnidagundi.github.io/TestStrategy/">https://padmarajnidagundi.github.io/TestStrategy/</a>
-        </p>
+      <section class="canvas" aria-label="Lean Canvas">
+        <article class="block problem">
+          <h2>Problem</h2>
+          <ul>
+            <li>Testing efforts are fragmented across teams and tools.</li>
+            <li>Quality risks are identified late in release cycles.</li>
+            <li>Test strategy decisions lack shared, visible rationale.</li>
+          </ul>
+        </article>
 
-        <p>
-          This site is intentionally streamlined. The older, long-form test strategy material has been removed to keep the public page focused on the dashboard and project overview.
-        </p>
+        <article class="block solution">
+          <h2>Solution</h2>
+          <ul>
+            <li>Central dashboard for strategy, coverage, and risk insights.</li>
+            <li>AI-assisted recommendations for test prioritization.</li>
+            <li>Standardized templates for strategy planning and reporting.</li>
+          </ul>
+        </article>
 
-        <h2>What this project includes</h2>
-        <ul>
-          <li>Interactive dashboard content</li>
-          <li>Supporting project assets</li>
-          <li>Simple project documentation</li>
-        </ul>
+        <article class="block unique">
+          <h2>Unique Value Proposition</h2>
+          <ul>
+            <li>Convert test planning into actionable, measurable outcomes.</li>
+            <li>Unify quality signals into one trusted decision surface.</li>
+          </ul>
+        </article>
 
-        <h2>Repository</h2>
-        <p>
-          GitHub: <a href="https://github.com/padmarajnidagundi/TestStrategy">https://github.com/padmarajnidagundi/TestStrategy</a>
-        </p>
+        <article class="block advantage">
+          <h2>Unfair Advantage</h2>
+          <ul>
+            <li>Domain-tested strategy framework aligned to enterprise QA.</li>
+            <li>Reusable dashboard artifacts and implementation playbooks.</li>
+            <li>Institutional knowledge captured in structured templates.</li>
+          </ul>
+        </article>
 
-        <footer>
-          This page is optimized for clarity and a cleaner public-facing experience.
-        </footer>
-      </div>
+        <article class="block channels">
+          <h2>Channels</h2>
+          <ul>
+            <li>GitHub Pages public showcase.</li>
+            <li>Internal quality engineering forums and communities.</li>
+            <li>Leadership demos and release readiness reviews.</li>
+          </ul>
+        </article>
+
+        <article class="block segments">
+          <h2>Customer Segments</h2>
+          <ul>
+            <li>QA leads and test architects.</li>
+            <li>Engineering managers and release managers.</li>
+            <li>Product teams requiring risk-based quality visibility.</li>
+          </ul>
+        </article>
+
+        <article class="block metrics">
+          <h2>Key Metrics</h2>
+          <ul>
+            <li>Reduction in escaped defects.</li>
+            <li>Increase in risk-based test coverage.</li>
+            <li>Cycle time from strategy definition to execution.</li>
+          </ul>
+        </article>
+
+        <article class="block cost">
+          <h2>Cost Structure</h2>
+          <ul>
+            <li>Dashboard development and maintenance.</li>
+            <li>Data integration and environment setup.</li>
+            <li>Training and ongoing adoption support.</li>
+          </ul>
+        </article>
+
+        <article class="block revenue">
+          <h2>Revenue Streams / Impact</h2>
+          <ul>
+            <li>Lower quality-related rework costs.</li>
+            <li>Faster releases through focused test investment.</li>
+            <li>Productivity gains from reusable strategy assets.</li>
+          </ul>
+        </article>
+      </section>
+
+      <footer>
+        Repository:
+        <a href="https://github.com/padmarajnidagundi/TestStrategy">padmarajnidagundi/TestStrategy</a>
+      </footer>
     </main>
   </body>
 </html>
