@@ -70,8 +70,47 @@
         margin: 0 0 6px;
       }
 
+      .examples {
+        margin-top: 24px;
+      }
+
+      .examples h2 {
+        margin: 0 0 8px;
+        font-size: 1.3rem;
+        color: var(--accent);
+      }
+
+      .examples-intro {
+        margin: 0 0 14px;
+        color: var(--muted);
+      }
+
+      .example-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 12px;
+      }
+
+      .example-card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 12px 12px 10px;
+      }
+
+      .example-card h3 {
+        margin: 0 0 8px;
+        font-size: 1rem;
+        color: var(--accent);
+      }
+
+      .example-item {
+        margin: 0 0 7px;
+        font-size: 0.93rem;
+      }
+
       footer {
-        margin-top: 14px;
+        margin-top: 16px;
         color: var(--muted);
         font-size: 0.88rem;
       }
@@ -204,6 +243,65 @@
             <li>Productivity gains from reusable strategy assets.</li>
           </ul>
         </article>
+      </section>
+
+      <section class="examples" aria-label="Lean Canvas examples for test strategy">
+        <h2>Lean Canvas Examples for Test Strategy Building</h2>
+        <p class="examples-intro">
+          These examples show how Lean Canvas thinking can frame different test strategy contexts with
+          concise problem, solution, and impact statements.
+        </p>
+
+        <div class="example-grid">
+          <article class="example-card">
+            <h3>1. Mobile Application Test Strategy</h3>
+            <p class="example-item"><strong>Problem:</strong> Device fragmentation and variable network quality create inconsistent behavior.</p>
+            <p class="example-item"><strong>Solution:</strong> Prioritize tests across top devices, OS versions, and core user journeys.</p>
+            <p class="example-item"><strong>Impact:</strong> Better app stability, fewer production incidents, and faster release decisions.</p>
+          </article>
+
+          <article class="example-card">
+            <h3>2. Web Application Test Strategy</h3>
+            <p class="example-item"><strong>Problem:</strong> Frequent UI changes increase regression risk across browsers.</p>
+            <p class="example-item"><strong>Solution:</strong> Combine API, integration, and focused cross-browser UI automation.</p>
+            <p class="example-item"><strong>Impact:</strong> Lower regression leakage and improved confidence before deployment.</p>
+          </article>
+
+          <article class="example-card">
+            <h3>3. AI Application Test Strategy</h3>
+            <p class="example-item"><strong>Problem:</strong> Model behavior can drift and fail on edge prompts.</p>
+            <p class="example-item"><strong>Solution:</strong> Use curated evaluation datasets, rubric scoring, and periodic benchmark tests.</p>
+            <p class="example-item"><strong>Impact:</strong> More reliable outputs and measurable quality improvements over time.</p>
+          </article>
+
+          <article class="example-card">
+            <h3>4. Hardware Test Strategy</h3>
+            <p class="example-item"><strong>Problem:</strong> Integration defects appear late and are expensive to correct.</p>
+            <p class="example-item"><strong>Solution:</strong> Stage validation from component to system with fault-injection scenarios.</p>
+            <p class="example-item"><strong>Impact:</strong> Reduced field failures and stronger release readiness.</p>
+          </article>
+
+          <article class="example-card">
+            <h3>5. AI Agents Test Strategy</h3>
+            <p class="example-item"><strong>Problem:</strong> Multi-step agent behavior is non-deterministic and hard to reproduce.</p>
+            <p class="example-item"><strong>Solution:</strong> Validate scenario flows, tool contracts, and safety guardrails end to end.</p>
+            <p class="example-item"><strong>Impact:</strong> More dependable autonomous workflows with lower operational risk.</p>
+          </article>
+
+          <article class="example-card">
+            <h3>6. API and Microservices Test Strategy</h3>
+            <p class="example-item"><strong>Problem:</strong> Service interactions fail in production despite passing unit tests.</p>
+            <p class="example-item"><strong>Solution:</strong> Add contract tests, integration environments, and resilience checks.</p>
+            <p class="example-item"><strong>Impact:</strong> Fewer breaking changes and improved service reliability.</p>
+          </article>
+
+          <article class="example-card">
+            <h3>7. Data Platform Test Strategy</h3>
+            <p class="example-item"><strong>Problem:</strong> Data quality and schema drift break analytics accuracy.</p>
+            <p class="example-item"><strong>Solution:</strong> Enforce data contracts with pipeline validation and anomaly detection.</p>
+            <p class="example-item"><strong>Impact:</strong> Trusted reporting and faster root-cause resolution for data incidents.</p>
+          </article>
+        </div>
       </section>
 
       <footer>
