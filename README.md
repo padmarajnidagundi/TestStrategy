@@ -1,6 +1,6 @@
 # TestStrategy
 
-A public-facing Lean Canvas page for an AI testing strategy dashboard and supporting project assets.
+A public-facing Lean Canvas page for an AI testing strategy dashboard, plus seven example boards for test strategy building.
 
 ## Live Demo
 
@@ -8,18 +8,19 @@ A public-facing Lean Canvas page for an AI testing strategy dashboard and suppor
 
 ## Overview
 
-This repository hosts a single-page Lean Canvas and supporting materials for a testing strategy dashboard. The goal is to present the business model clearly in a clean GitHub Pages experience.
+This repository hosts a single-page Lean Canvas and seven test strategy example boards. The goal is to show both a primary canvas and practical examples of how Lean Canvas can be used for test strategy planning.
 
 ## Included
 
 - Public GitHub Pages Lean Canvas page
 - One-page business model overview
+- Seven Lean Canvas examples with problem, solution, and impact
 - Supporting visual asset for the initiative
 - Simple project documentation
 
 ## Project Files
 
-- `index.html` — one-page Lean Canvas for the project
+- `index.html` — one-page Lean Canvas plus seven test strategy examples
 - `README.md` — project overview and usage information
 - `Lean_Canvas_Test_Strategy_Dashboard.jpg` — dashboard image asset
 - `PD_Nidagundi_FINAL_A4.pdf` — supporting project document
