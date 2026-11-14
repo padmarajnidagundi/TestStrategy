@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TestStrategy - Lean Canvas Examples</title>
+    <title>TestStrategy Lean Canvas</title>
     <style>
       :root {
         --bg: #f8fafc;
@@ -21,117 +21,193 @@
         font-family: "Segoe UI", Arial, Helvetica, sans-serif;
         background: var(--bg);
         color: var(--text);
-        line-height: 1.5;
+        line-height: 1.45;
       }
       main {
-        max-width: 1180px;
+        max-width: 1280px;
         margin: 0 auto;
-        padding: 24px 16px 52px;
+        padding: 24px 16px 40px;
       }
       header {
-        margin-bottom: 18px;
+        margin-bottom: 20px;
       }
       header h1 {
-        margin: 0 0 8px;
-        font-size: clamp(1.5rem, 2.6vw, 2.3rem);
+        margin: 0 0 6px;
+        font-size: clamp(1.6rem, 2.7vw, 2.4rem);
         color: var(--accent);
       }
       header p {
         margin: 0;
         color: var(--muted);
       }
-      .boards {
+
+      .canvas {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 14px;
+        grid-template-columns: 1fr;
+        gap: 12px;
       }
-      .board {
+
+      .block {
         background: var(--panel);
         border: 1px solid var(--border);
         border-radius: 10px;
-        padding: 14px;
+        padding: 14px 14px 12px;
+        min-height: 170px;
       }
-      .board h2 {
+
+      .block h2 {
         margin: 0 0 10px;
-        font-size: 1.05rem;
+        font-size: 1rem;
         color: var(--accent);
       }
-      .item {
-        margin: 0 0 8px;
-        font-size: 0.94rem;
+
+      .block ul {
+        margin: 0;
+        padding-left: 18px;
       }
-      .item strong {
-        color: #0b3aa4;
+
+      .block li {
+        margin: 0 0 6px;
       }
+
       footer {
-        margin-top: 16px;
+        margin-top: 14px;
         color: var(--muted);
         font-size: 0.88rem;
+      }
+
+      @media (min-width: 980px) {
+        .canvas {
+          grid-template-columns: repeat(5, minmax(0, 1fr));
+          grid-template-areas:
+            "problem solution unique advantage channels"
+            "segments metrics unique advantage channels"
+            "cost cost revenue revenue revenue";
+        }
+
+        .problem {
+          grid-area: problem;
+        }
+        .solution {
+          grid-area: solution;
+        }
+        .unique {
+          grid-area: unique;
+        }
+        .advantage {
+          grid-area: advantage;
+        }
+        .channels {
+          grid-area: channels;
+        }
+        .segments {
+          grid-area: segments;
+        }
+        .metrics {
+          grid-area: metrics;
+        }
+        .cost {
+          grid-area: cost;
+          min-height: 150px;
+        }
+        .revenue {
+          grid-area: revenue;
+          min-height: 150px;
+        }
       }
     </style>
   </head>
   <body>
     <main>
       <header>
-        <h1>One-Page Lean Canvas Examples - Test Strategy</h1>
-        <p>Seven sample Lean Canvas boards with short problem, solution, and impact statements.</p>
+        <h1>Lean Canvas — TestStrategy Dashboard</h1>
+        <p>One-page business model for the AI-powered test strategy dashboard initiative.</p>
       </header>
 
-      <section class="boards" aria-label="Lean Canvas examples">
-        <article class="board">
-          <h2>1. Mobile Application Test Strategy</h2>
-          <p class="item"><strong>Problem:</strong> Device fragmentation and variable network quality cause inconsistent app behavior.</p>
-          <p class="item"><strong>Solution:</strong> Prioritize tests by top devices, OS versions, and critical user journeys with cloud device labs.</p>
-          <p class="item"><strong>Impact:</strong> Higher release confidence, fewer crash-related complaints, and faster hotfix cycles.</p>
+      <section class="canvas" aria-label="Lean Canvas">
+        <article class="block problem">
+          <h2>Problem</h2>
+          <ul>
+            <li>Testing efforts are fragmented across teams and tools.</li>
+            <li>Quality risks are identified late in release cycles.</li>
+            <li>Test strategy decisions lack shared, visible rationale.</li>
+          </ul>
         </article>
 
-        <article class="board">
-          <h2>2. Web Application Test Strategy</h2>
-          <p class="item"><strong>Problem:</strong> Frequent UI changes break core workflows and cross-browser compatibility.</p>
-          <p class="item"><strong>Solution:</strong> Layered strategy using contract, API, and targeted UI regression tests on supported browsers.</p>
-          <p class="item"><strong>Impact:</strong> Better production stability, lower regression escape rate, and shorter validation time.</p>
+        <article class="block solution">
+          <h2>Solution</h2>
+          <ul>
+            <li>Central dashboard for strategy, coverage, and risk insights.</li>
+            <li>AI-assisted recommendations for test prioritization.</li>
+            <li>Standardized templates for strategy planning and reporting.</li>
+          </ul>
         </article>
 
-        <article class="board">
-          <h2>3. AI Application Test Strategy</h2>
-          <p class="item"><strong>Problem:</strong> Model output quality drifts and edge cases are hard to detect with standard tests.</p>
-          <p class="item"><strong>Solution:</strong> Combine deterministic checks, golden datasets, and periodic evaluation against quality rubrics.</p>
-          <p class="item"><strong>Impact:</strong> More reliable responses, measurable model quality, and reduced user trust issues.</p>
+        <article class="block unique">
+          <h2>Unique Value Proposition</h2>
+          <ul>
+            <li>Convert test planning into actionable, measurable outcomes.</li>
+            <li>Unify quality signals into one trusted decision surface.</li>
+          </ul>
         </article>
 
-        <article class="board">
-          <h2>4. Hardware Test Strategy</h2>
-          <p class="item"><strong>Problem:</strong> Hardware-software integration defects emerge late and are expensive to fix.</p>
-          <p class="item"><strong>Solution:</strong> Use staged bench testing, fault injection, and traceability from requirements to validation.</p>
-          <p class="item"><strong>Impact:</strong> Lower field failure rates, earlier defect discovery, and improved certification readiness.</p>
+        <article class="block advantage">
+          <h2>Unfair Advantage</h2>
+          <ul>
+            <li>Domain-tested strategy framework aligned to enterprise QA.</li>
+            <li>Reusable dashboard artifacts and implementation playbooks.</li>
+            <li>Institutional knowledge captured in structured templates.</li>
+          </ul>
         </article>
 
-        <article class="board">
-          <h2>5. AI Agents Test Strategy</h2>
-          <p class="item"><strong>Problem:</strong> Agent workflows are non-deterministic and tool-calling failures are difficult to reproduce.</p>
-          <p class="item"><strong>Solution:</strong> Test plans include scenario simulation, tool contract checks, and safety guardrail verification.</p>
-          <p class="item"><strong>Impact:</strong> More dependable automation outcomes and reduced operational risk in production agents.</p>
+        <article class="block channels">
+          <h2>Channels</h2>
+          <ul>
+            <li>GitHub Pages public showcase.</li>
+            <li>Internal quality engineering forums and communities.</li>
+            <li>Leadership demos and release readiness reviews.</li>
+          </ul>
         </article>
 
-        <article class="board">
-          <h2>6. API and Microservices Test Strategy</h2>
-          <p class="item"><strong>Problem:</strong> Service dependencies create hidden failures that unit tests do not expose.</p>
-          <p class="item"><strong>Solution:</strong> Contract-first testing with consumer-driven contracts and production-like integration gates.</p>
-          <p class="item"><strong>Impact:</strong> Fewer breaking changes across services and stronger deployment reliability.</p>
+        <article class="block segments">
+          <h2>Customer Segments</h2>
+          <ul>
+            <li>QA leads and test architects.</li>
+            <li>Engineering managers and release managers.</li>
+            <li>Product teams requiring risk-based quality visibility.</li>
+          </ul>
         </article>
 
-        <article class="board">
-          <h2>7. Data Platform Test Strategy</h2>
-          <p class="item"><strong>Problem:</strong> Data quality issues and schema drift break analytics and downstream decisions.</p>
-          <p class="item"><strong>Solution:</strong> Add data contracts, pipeline validation, and anomaly detection at each processing stage.</p>
-          <p class="item"><strong>Impact:</strong> Trusted reporting, lower incident volume, and quicker root-cause identification.</p>
+        <article class="block metrics">
+          <h2>Key Metrics</h2>
+          <ul>
+            <li>Reduction in escaped defects.</li>
+            <li>Increase in risk-based test coverage.</li>
+            <li>Cycle time from strategy definition to execution.</li>
+          </ul>
+        </article>
+
+        <article class="block cost">
+          <h2>Cost Structure</h2>
+          <ul>
+            <li>Dashboard development and maintenance.</li>
+            <li>Data integration and environment setup.</li>
+            <li>Training and ongoing adoption support.</li>
+          </ul>
+        </article>
+
+        <article class="block revenue">
+          <h2>Revenue Streams / Impact</h2>
+          <ul>
+            <li>Lower quality-related rework costs.</li>
+            <li>Faster releases through focused test investment.</li>
+            <li>Productivity gains from reusable strategy assets.</li>
+          </ul>
         </article>
       </section>
 
       <footer>
-        Live site:
-        <a href="https://padmarajnidagundi.github.io/TestStrategy/">padmarajnidagundi.github.io/TestStrategy</a>
-        | Repository:
+        Repository:
         <a href="https://github.com/padmarajnidagundi/TestStrategy">padmarajnidagundi/TestStrategy</a>
       </footer>
     </main>
