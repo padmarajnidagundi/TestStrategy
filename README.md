@@ -10,6 +10,21 @@ A public-facing Lean Canvas page for an AI testing strategy dashboard, plus real
 
 This repository hosts a single-page Lean Canvas and twelve test strategy example boards. The goal is to show both a primary canvas and practical real-use-case examples of how Lean Canvas can be used for test strategy planning.
 
+## QA/Test Engineer Steps: Lean Canvas for Test Strategy in the AI Agentic Era
+
+Based on the thesis document (`PD_Nidagundi_FINAL_A4.pdf`) and the visual board in `index.html`, use Lean Canvas as a one-page, continuously updated test strategy:
+
+1. Define **Problem**: capture top quality risks (non-deterministic agent behavior, tool-call failures, safety/policy gaps, drift).
+2. Identify **Customer Segments**: QA leads, engineering teams, release managers, product stakeholders.
+3. Write **Unique Value Proposition**: one clear statement of quality value (fast, visible, risk-based confidence).
+4. Define **Solution**: scenario-flow tests, tool/API contract tests, safety guardrail tests, benchmark/evaluation datasets, resilience checks.
+5. Select **Key Metrics**: escaped defects, risk-based coverage, scenario pass rate, strategy-to-execution cycle time.
+6. Set **Channels**: sprint planning, strategy workshops, release-readiness reviews, project governance meetings.
+7. Record **Unfair Advantage**: reusable templates, domain test patterns, institutional knowledge, proven framework.
+8. Estimate **Cost Structure**: dashboard/automation effort, environments, data preparation, training and maintenance.
+9. Clarify **Revenue Streams / Impact**: lower rework, faster safe releases, improved reliability and decision quality.
+10. Iterate continuously: update the board every sprint/release based on defects, incidents, and feedback.
+
 ## Included
 
 - Public GitHub Pages Lean Canvas page
