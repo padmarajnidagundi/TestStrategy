@@ -3,42 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TestStrategy Lean Canvas</title>
+    <meta
+      name="description"
+      content="Lean Canvas test strategy for AI agents and MCP-enabled systems."
+    />
+    <title>AI Agent Test Strategy - Lean Canvas</title>
     <style>
       :root {
-        --bg: #f8fafc;
+        --bg: #eef4ff;
         --panel: #ffffff;
-        --border: #dbe2ea;
-        --text: #0f172a;
-        --muted: #475569;
-        --accent: #1d4ed8;
+        --panel-soft: #f7f9fd;
+        --border: #cbd5e1;
+        --text: #172033;
+        --muted: #5e6b82;
+        --accent: #2459d3;
+        --accent-dark: #163e9d;
+        --accent-soft: #dfeaff;
+        --green: #16805b;
+        --shadow: 0 12px 28px rgba(28, 45, 78, 0.08);
       }
+
       * {
         box-sizing: border-box;
       }
+
       body {
         margin: 0;
         font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-        background: var(--bg);
+        background:
+          radial-gradient(circle at top left, rgba(36, 89, 211, 0.08), transparent 28rem),
+          var(--bg);
         color: var(--text);
         line-height: 1.45;
       }
+
       main {
-        max-width: 1280px;
+        max-width: 1380px;
         margin: 0 auto;
-        padding: 24px 16px 40px;
+        padding: 28px 18px 44px;
       }
+
       header {
-        margin-bottom: 20px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 18px;
       }
-      header h1 {
-        margin: 0 0 6px;
-        font-size: clamp(1.6rem, 2.7vw, 2.4rem);
+
+      .eyebrow {
+        margin: 0 0 4px;
         color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
       }
-      header p {
+
+      header h1 {
         margin: 0;
+        font-size: clamp(1.9rem, 3.5vw, 3rem);
+        letter-spacing: -0.035em;
+      }
+
+      .subtitle {
+        max-width: 520px;
+        margin: 7px 0 0;
         color: var(--muted);
+      }
+
+      .context-chip {
+        flex: 0 0 auto;
+        margin-bottom: 4px;
+        border: 1px solid #bbcff8;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent-dark);
+        padding: 8px 12px;
+        font-size: 0.82rem;
+        font-weight: 700;
       }
 
       .canvas {
@@ -48,17 +91,30 @@
       }
 
       .block {
-        background: var(--panel);
+        min-height: 190px;
         border: 1px solid var(--border);
-        border-radius: 10px;
-        padding: 14px 14px 12px;
-        min-height: 170px;
+        border-radius: 12px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+        padding: 16px;
       }
 
       .block h2 {
-        margin: 0 0 10px;
-        font-size: 1rem;
-        color: var(--accent);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 12px;
+        color: var(--accent-dark);
+        font-size: 0.96rem;
+      }
+
+      .block h2::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        flex: 0 0 auto;
+        border-radius: 50%;
+        background: var(--accent);
       }
 
       .block ul {
@@ -67,81 +123,117 @@
       }
 
       .block li {
-        margin: 0 0 6px;
-      }
-
-      .examples {
-        margin-top: 24px;
-      }
-
-      .examples h2 {
-        margin: 0 0 8px;
-        font-size: 1.3rem;
-        color: var(--accent);
-      }
-
-      .examples-intro {
-        margin: 0 0 14px;
-        color: var(--muted);
-      }
-
-      .example-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 12px;
-      }
-
-      .featured-agent {
-        background: #eff6ff;
-        border: 1px solid #bfdbfe;
-        border-radius: 10px;
-        padding: 12px 12px 10px;
-        margin-bottom: 12px;
-      }
-
-      .featured-agent h3 {
-        margin: 0 0 8px;
-        font-size: 1rem;
-        color: var(--accent);
-      }
-
-      .example-card {
-        background: var(--panel);
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        padding: 12px 12px 10px;
-      }
-
-      .example-card h3 {
-        margin: 0 0 8px;
-        font-size: 1rem;
-        color: var(--accent);
-      }
-
-      .example-item {
         margin: 0 0 7px;
-        font-size: 0.93rem;
       }
 
-      .thesis-board {
-        margin-top: 24px;
+      .block strong {
+        color: var(--text);
       }
 
-      .thesis-board h2 {
-        margin: 0 0 8px;
-        font-size: 1.3rem;
+      .unique,
+      .advantage {
+        background: linear-gradient(145deg, #ffffff 0%, #f1f5ff 100%);
+      }
+
+      .unique h2,
+      .advantage h2 {
         color: var(--accent);
       }
 
-      .thesis-intro {
-        margin: 0 0 14px;
+      .unique p {
+        margin: 0;
+        color: var(--text);
+        font-size: 1.04rem;
+        font-weight: 750;
+      }
+
+      .metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      .metric {
+        border-radius: 8px;
+        background: var(--panel-soft);
+        padding: 9px;
+      }
+
+      .metric strong {
+        display: block;
+        color: var(--accent);
+        font-size: 1.16rem;
+      }
+
+      .metric span {
         color: var(--muted);
+        font-size: 0.78rem;
+      }
+
+      .flow {
+        margin-top: 16px;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.82);
+        padding: 14px 16px;
+      }
+
+      .flow h2 {
+        margin: 0 0 10px;
+        color: var(--accent-dark);
+        font-size: 1rem;
+      }
+
+      .flow ol {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        counter-reset: test-flow;
+      }
+
+      .flow li {
+        position: relative;
+        border: 1px solid #dde5f1;
+        border-radius: 8px;
+        background: #ffffff;
+        padding: 9px 10px 9px 38px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        counter-increment: test-flow;
+      }
+
+      .flow li::before {
+        content: counter(test-flow);
+        position: absolute;
+        left: 10px;
+        top: 8px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: var(--accent);
+        color: #ffffff;
+        font-size: 0.72rem;
+        font-weight: 800;
+        line-height: 20px;
+        text-align: center;
       }
 
       footer {
-        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 14px;
         color: var(--muted);
-        font-size: 0.88rem;
+        font-size: 0.84rem;
+      }
+
+      footer a {
+        color: var(--accent);
+        font-weight: 700;
+        text-decoration: none;
       }
 
       @media (min-width: 980px) {
@@ -182,293 +274,152 @@
           grid-area: revenue;
           min-height: 150px;
         }
+
+        .flow ol {
+          grid-template-columns: repeat(5, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 700px) {
+        header {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        footer {
+          flex-direction: column;
+        }
       }
     </style>
   </head>
   <body>
     <main>
       <header>
-        <h1>Lean Canvas — TestStrategy Dashboard</h1>
-        <p>One-page business model for the AI-powered test strategy dashboard initiative.</p>
+        <div>
+          <p class="eyebrow">Test Strategy Canvas</p>
+          <h1>AI Agent Test Strategy</h1>
+          <p class="subtitle">
+            Risk-based assurance for autonomous workflows, MCP tool calls, and human-reviewed decisions.
+          </p>
+        </div>
+        <p class="context-chip">AI Agentic Era · 2026</p>
       </header>
 
-      <section class="canvas" aria-label="Lean Canvas">
+      <section class="canvas" aria-label="Lean Canvas test strategy">
         <article class="block problem">
           <h2>Problem</h2>
           <ul>
-            <li>Testing efforts are fragmented across teams and tools.</li>
-            <li>Quality risks are identified late in release cycles.</li>
-            <li>Test strategy decisions lack shared, visible rationale.</li>
+            <li><strong>Non-deterministic behavior</strong> makes agent failures difficult to reproduce.</li>
+            <li>Tool calls can have invalid inputs, stale context, or partial side effects.</li>
+            <li>Safety, privacy, and policy gaps emerge across multi-step workflows.</li>
+            <li>Teams lack a shared measure for risk and release readiness.</li>
           </ul>
         </article>
 
         <article class="block solution">
           <h2>Solution</h2>
           <ul>
-            <li>Central dashboard for strategy, coverage, and risk insights.</li>
-            <li>AI-assisted recommendations for test prioritization.</li>
-            <li>Standardized templates for strategy planning and reporting.</li>
+            <li>Scenario and replay suites for critical end-to-end journeys.</li>
+            <li>MCP/API contract tests with schema, permission, and state validation.</li>
+            <li>Rubric-based evaluation datasets for quality and grounding.</li>
+            <li>Guardrail, fault-injection, drift, and rollback testing.</li>
           </ul>
         </article>
 
         <article class="block unique">
           <h2>Unique Value Proposition</h2>
-          <ul>
-            <li>Convert test planning into actionable, measurable outcomes.</li>
-            <li>Unify quality signals into one trusted decision surface.</li>
-          </ul>
+          <p>
+            Release autonomous workflows with visible, measurable confidence—not blind trust in model outputs.
+          </p>
         </article>
 
         <article class="block advantage">
           <h2>Unfair Advantage</h2>
           <ul>
-            <li>Domain-tested strategy framework aligned to enterprise QA.</li>
-            <li>Reusable dashboard artifacts and implementation playbooks.</li>
-            <li>Institutional knowledge captured in structured templates.</li>
+            <li>Reusable agent scenario and evaluation templates.</li>
+            <li>Traceable test evidence for prompts, tools, context, and decisions.</li>
+            <li>Domain risk patterns maintained by QA and engineering together.</li>
+            <li>Continuous learning from incidents, defects, and live feedback.</li>
           </ul>
         </article>
 
         <article class="block channels">
           <h2>Channels</h2>
           <ul>
-            <li>GitHub Pages public showcase.</li>
-            <li>Internal quality engineering forums and communities.</li>
-            <li>Leadership demos and release readiness reviews.</li>
+            <li>Agent design and threat-modeling workshops.</li>
+            <li>CI/CD quality gates and evaluation pipelines.</li>
+            <li>Sprint reviews and release-readiness forums.</li>
+            <li>Runtime observability and incident reviews.</li>
           </ul>
         </article>
 
         <article class="block segments">
           <h2>Customer Segments</h2>
           <ul>
-            <li>QA leads and test architects.</li>
-            <li>Engineering managers and release managers.</li>
-            <li>Product teams requiring risk-based quality visibility.</li>
+            <li>AI platform and agent engineering teams.</li>
+            <li>QA leads, test architects, and SRE teams.</li>
+            <li>Security, compliance, product, and risk owners.</li>
+            <li>Release managers and executive stakeholders.</li>
           </ul>
         </article>
 
         <article class="block metrics">
           <h2>Key Metrics</h2>
-          <ul>
-            <li>Reduction in escaped defects.</li>
-            <li>Increase in risk-based test coverage.</li>
-            <li>Cycle time from strategy definition to execution.</li>
-          </ul>
+          <div class="metrics-grid">
+            <div class="metric">
+              <strong>Pass rate</strong>
+              <span>Core scenarios</span>
+            </div>
+            <div class="metric">
+              <strong>Escapes</strong>
+              <span>Defects released</span>
+            </div>
+            <div class="metric">
+              <strong>Risk coverage</strong>
+              <span>Top risks tested</span>
+            </div>
+            <div class="metric">
+              <strong>Recovery</strong>
+              <span>Rollback success</span>
+            </div>
+          </div>
         </article>
 
         <article class="block cost">
           <h2>Cost Structure</h2>
           <ul>
-            <li>Dashboard development and maintenance.</li>
-            <li>Data integration and environment setup.</li>
-            <li>Training and ongoing adoption support.</li>
+            <li>Evaluation dataset creation, labeling, and maintenance.</li>
+            <li>Test environments, model gateways, and MCP tool access.</li>
+            <li>Automation, observability, and human review effort.</li>
+            <li>Security, privacy, governance, and training overhead.</li>
           </ul>
         </article>
 
         <article class="block revenue">
           <h2>Revenue Streams / Impact</h2>
           <ul>
-            <li>Lower quality-related rework costs.</li>
-            <li>Faster releases through focused test investment.</li>
-            <li>Productivity gains from reusable strategy assets.</li>
+            <li>Fewer critical incidents and lower operational rework.</li>
+            <li>Faster safe releases through reusable quality gates.</li>
+            <li>Greater customer trust and reliable autonomous workflows.</li>
+            <li>Earlier detection of model drift and tool regressions.</li>
           </ul>
         </article>
       </section>
 
-      <section class="examples" aria-label="Lean Canvas examples for test strategy">
-        <h2>Lean Canvas Examples for Test Strategy</h2>
-        <p class="examples-intro">
-          These examples show how Lean Canvas thinking can frame different test strategy contexts with
-          concise problem, solution, and impact statements.
-        </p>
-
-        <article class="featured-agent">
-          <h3>Featured: AI Agents Test Strategy (Lean Canvas)</h3>
-          <p class="example-item"><strong>Problem:</strong> Multi-step agent behavior is non-deterministic and hard to reproduce.</p>
-          <p class="example-item"><strong>Solution:</strong> Validate scenario flows, tool contracts, and safety guardrails end to end.</p>
-          <p class="example-item"><strong>Impact:</strong> More dependable autonomous workflows with lower operational risk.</p>
-        </article>
-
-        <div class="example-grid">
-          <article class="example-card">
-            <h3>1. Mobile Application Test Strategy</h3>
-            <p class="example-item"><strong>Problem:</strong> Device fragmentation and variable network quality create inconsistent behavior.</p>
-            <p class="example-item"><strong>Solution:</strong> Prioritize tests across top devices, OS versions, and core user journeys.</p>
-            <p class="example-item"><strong>Impact:</strong> Better app stability, fewer production incidents, and faster release decisions.</p>
-          </article>
-
-          <article class="example-card">
-            <h3>2. Web Application Test Strategy</h3>
-            <p class="example-item"><strong>Problem:</strong> Frequent UI changes increase regression risk across browsers.</p>
-            <p class="example-item"><strong>Solution:</strong> Combine API, integration, and focused cross-browser UI automation.</p>
-            <p class="example-item"><strong>Impact:</strong> Lower regression leakage and improved confidence before deployment.</p>
-          </article>
-
-          <article class="example-card">
-            <h3>3. AI Application Test Strategy</h3>
-            <p class="example-item"><strong>Problem:</strong> Model behavior can drift and fail on edge prompts.</p>
-            <p class="example-item"><strong>Solution:</strong> Use curated evaluation datasets, rubric scoring, and periodic benchmark tests.</p>
-            <p class="example-item"><strong>Impact:</strong> More reliable outputs and measurable quality improvements over time.</p>
-          </article>
-
-          <article class="example-card">
-            <h3>4. Hardware Test Strategy</h3>
-            <p class="example-item"><strong>Problem:</strong> Integration defects appear late and are expensive to correct.</p>
-            <p class="example-item"><strong>Solution:</strong> Stage validation from component to system with fault-injection scenarios.</p>
-            <p class="example-item"><strong>Impact:</strong> Reduced field failures and stronger release readiness.</p>
-          </article>
-
-          <article class="example-card">
-            <h3>5. AI Agents Test Strategy</h3>
-            <p class="example-item"><strong>Problem:</strong> Multi-step agent behavior is non-deterministic and hard to reproduce.</p>
-            <p class="example-item"><strong>Solution:</strong> Validate scenario flows, tool contracts, and safety guardrails end to end.</p>
-            <p class="example-item"><strong>Impact:</strong> More dependable autonomous workflows with lower operational risk.</p>
-          </article>
-
-          <article class="example-card">
-            <h3>6. API and Microservices Test Strategy</h3>
-            <p class="example-item"><strong>Problem:</strong> Service interactions fail in production despite passing unit tests.</p>
-            <p class="example-item"><strong>Solution:</strong> Add contract tests, integration environments, and resilience checks.</p>
-            <p class="example-item"><strong>Impact:</strong> Fewer breaking changes and improved service reliability.</p>
-          </article>
-
-          <article class="example-card">
-            <h3>7. Data Platform Test Strategy</h3>
-            <p class="example-item"><strong>Problem:</strong> Data quality and schema drift break analytics accuracy.</p>
-            <p class="example-item"><strong>Solution:</strong> Enforce data contracts with pipeline validation and anomaly detection.</p>
-            <p class="example-item"><strong>Impact:</strong> Trusted reporting and faster root-cause resolution for data incidents.</p>
-          </article>
-
-          <article class="example-card">
-            <h3>8. E-commerce Checkout Test Strategy</h3>
-            <p class="example-item"><strong>Problem:</strong> Checkout failures during peak traffic cause cart abandonment and revenue loss.</p>
-            <p class="example-item"><strong>Solution:</strong> Validate payment workflows with risk-based regression, load tests, and chaos scenarios.</p>
-            <p class="example-item"><strong>Impact:</strong> Higher conversion rates and fewer critical incidents during sales events.</p>
-          </article>
-
-          <article class="example-card">
-            <h3>9. Healthcare Platform Test Strategy</h3>
-            <p class="example-item"><strong>Problem:</strong> Patient-data workflows require strict accuracy, privacy, and auditability.</p>
-            <p class="example-item"><strong>Solution:</strong> Pair compliance-focused test suites with data integrity and role-based access validation.</p>
-            <p class="example-item"><strong>Impact:</strong> Improved regulatory readiness and safer clinical operations.</p>
-          </article>
-
-          <article class="example-card">
-            <h3>10. FinTech Payments Test Strategy</h3>
-            <p class="example-item"><strong>Problem:</strong> Transaction errors and integration mismatches can create financial and trust risks.</p>
-            <p class="example-item"><strong>Solution:</strong> Apply contract testing, reconciliation checks, and real-time fraud scenario validation.</p>
-            <p class="example-item"><strong>Impact:</strong> More reliable payment processing and reduced operational loss.</p>
-          </article>
-
-          <article class="example-card">
-            <h3>11. IoT Device Fleet Test Strategy</h3>
-            <p class="example-item"><strong>Problem:</strong> Firmware updates across distributed devices are hard to verify at scale.</p>
-            <p class="example-item"><strong>Solution:</strong> Use staged rollout validation with telemetry assertions and rollback testing.</p>
-            <p class="example-item"><strong>Impact:</strong> Safer releases and lower downtime across the device fleet.</p>
-          </article>
-
-          <article class="example-card">
-            <h3>12. Cybersecurity Platform Test Strategy</h3>
-            <p class="example-item"><strong>Problem:</strong> Detection and response pipelines must stay resilient to evolving attack patterns.</p>
-            <p class="example-item"><strong>Solution:</strong> Continuously test detection rules, incident workflows, and performance under attack simulations.</p>
-            <p class="example-item"><strong>Impact:</strong> Faster threat response and stronger security posture across environments.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="thesis-board" aria-label="Full Lean Canvas board based on thesis">
-        <h2>Full Lean Canvas Example - Visualized Test Strategy (Thesis-Based)</h2>
-        <p class="thesis-intro">
-          This board is based on the doctoral thesis
-          <a href="https://ebooks.rtu.lv/wp-content/uploads/sites/32/2022/02/PD_Nidagundi_FINAL_A4.pdf">Software Testing Strategy Utilizing Lean Canvas Model</a>
-          and summarizes its core use case into a full nine-block Lean Canvas.
-        </p>
-
-        <section class="canvas" aria-label="Thesis-based Lean Canvas">
-          <article class="block problem">
-            <h2>Problem</h2>
-            <ul>
-              <li>Test strategy documentation is often lengthy and difficult for teams to interpret quickly.</li>
-              <li>Lack of a standard visual approach creates communication gaps between stakeholders.</li>
-              <li>Frequent project changes make static strategy documents hard to maintain.</li>
-            </ul>
-          </article>
-
-          <article class="block solution">
-            <h2>Solution</h2>
-            <ul>
-              <li>Adapt Lean Canvas into a visual test strategy board for rapid alignment.</li>
-              <li>Apply TABB (Test Activity Building Blocks) to structure strategy blocks and sub-blocks.</li>
-              <li>Update strategy iteratively through sprint/project feedback loops.</li>
-            </ul>
-          </article>
-
-          <article class="block unique">
-            <h2>Unique Value Proposition</h2>
-            <ul>
-              <li>A single-page visual strategy that is fast to understand and easy to evolve.</li>
-              <li>Bridges planning, risk visibility, and execution decisions in one board.</li>
-            </ul>
-          </article>
-
-          <article class="block advantage">
-            <h2>Unfair Advantage</h2>
-            <ul>
-              <li>Research-backed method validated through multiple real project case studies.</li>
-              <li>Doctoral-level framework with practical adoption evidence across test contexts.</li>
-              <li>Reusable visual format for agile and non-agile delivery models.</li>
-            </ul>
-          </article>
-
-          <article class="block channels">
-            <h2>Channels</h2>
-            <ul>
-              <li>Sprint planning, stand-ups, and retrospectives.</li>
-              <li>Test strategy workshops with QA, engineering, and product teams.</li>
-              <li>Project governance and release-readiness reviews.</li>
-            </ul>
-          </article>
-
-          <article class="block segments">
-            <h2>Customer Segments</h2>
-            <ul>
-              <li>QA leads and test architects needing strategy clarity.</li>
-              <li>Engineering teams requiring visible test priorities and risks.</li>
-              <li>Project stakeholders who need concise quality status communication.</li>
-            </ul>
-          </article>
-
-          <article class="block metrics">
-            <h2>Key Metrics</h2>
-            <ul>
-              <li>Cycle time to create and update test strategy artifacts.</li>
-              <li>Reduction in escaped defects and unplanned rework.</li>
-              <li>Stakeholder alignment and strategy adoption across project phases.</li>
-            </ul>
-          </article>
-
-          <article class="block cost">
-            <h2>Cost Structure</h2>
-            <ul>
-              <li>Facilitation time for workshops and strategy board updates.</li>
-              <li>Training teams to use visual Lean Canvas testing practices.</li>
-              <li>Ongoing maintenance of metrics and block-level traceability.</li>
-            </ul>
-          </article>
-
-          <article class="block revenue">
-            <h2>Revenue Streams / Impact</h2>
-            <ul>
-              <li>Faster decision-making and reduced overhead from heavy documentation.</li>
-              <li>Earlier risk identification and improved release confidence.</li>
-              <li>Higher quality outcomes through continuous strategy visibility.</li>
-            </ul>
-          </article>
-        </section>
+      <section class="flow" aria-label="Continuous test strategy workflow">
+        <h2>Continuous Test Strategy Loop</h2>
+        <ol>
+          <li><strong>Discover:</strong> map agent goals, tools, data, boundaries, and top risks.</li>
+          <li><strong>Specify:</strong> convert risks into scenarios, contracts, rubrics, and safeguards.</li>
+          <li><strong>Generate:</strong> create varied fixtures and edge cases with human approval.</li>
+          <li><strong>Execute:</strong> run deterministic contracts and probabilistic evaluations.</li>
+          <li><strong>Improve:</strong> update tests from incidents, drift signals, and stakeholder feedback.</li>
+        </ol>
       </section>
 
       <footer>
-        Repository:
-        <a href="https://github.com/padmarajnidagundi/TestStrategy">padmarajnidagundi/TestStrategy</a>
+        <span>Lean Canvas for test strategy in the AI and MCP era</span>
+        <a href="https://github.com/padmarajnidagundi/TestStrategy">Repository</a>
       </footer>
     </main>
   </body>

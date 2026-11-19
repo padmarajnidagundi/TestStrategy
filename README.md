@@ -1,6 +1,6 @@
 # TestStrategy
 
-A public-facing Lean Canvas page for an AI testing strategy dashboard, plus real-use-case example boards for test strategy building.
+A public-facing Lean Canvas test strategy for AI agents and MCP-enabled systems.
 
 ## Live Demo
 
@@ -8,11 +8,11 @@ A public-facing Lean Canvas page for an AI testing strategy dashboard, plus real
 
 ## Overview
 
-This repository hosts a single-page Lean Canvas and twelve test strategy example boards. The goal is to show both a primary canvas and practical real-use-case examples of how Lean Canvas can be used for test strategy planning.
+This repository hosts a one-page Lean Canvas that turns AI agent quality risks into test scenarios, measurable quality gates, and a continuous improvement loop.
 
 ## QA/Test Engineer Steps: Lean Canvas for Test Strategy in the AI Agentic Era
 
-Based on the thesis document (`PD_Nidagundi_FINAL_A4.pdf`) and the visual board in `index.html`, use Lean Canvas as a one-page, continuously updated test strategy:
+Based on the thesis document (`PD_Nidagundi_FINAL_A4.pdf`) and the public page in `index.html`, use the canvas as a focused, continuously updated test strategy:
 
 1. Define **Problem**: capture top quality risks (non-deterministic agent behavior, tool-call failures, safety/policy gaps, drift).
 2. Identify **Customer Segments**: QA leads, engineering teams, release managers, product stakeholders.
@@ -27,19 +27,17 @@ Based on the thesis document (`PD_Nidagundi_FINAL_A4.pdf`) and the visual board 
 
 ## Included
 
-- Public GitHub Pages Lean Canvas page
-- One-page business model overview
-- Featured AI Agents test strategy Lean Canvas example
-- Twelve Lean Canvas examples with problem, solution, and impact
-- Full nine-block Lean Canvas example based on the doctoral thesis case
-- Supporting visual asset for the initiative
-- Simple project documentation
+- Nine-block AI Agent test strategy Lean Canvas
+- MCP and API contract-testing considerations
+- Scenario, safety, drift, and rollback test priorities
+- Risk and quality metrics for release decisions
+- Continuous discover-specify-execute-improve workflow
+- Supporting thesis document
 
 ## Project Files
 
-- `index.html` — one-page Lean Canvas with twelve test strategy examples and one full thesis-based nine-block board
+- `index.html` — public AI Agent test strategy Lean Canvas
 - `README.md` — project overview and usage information
-- `Lean_Canvas_Test_Strategy_Dashboard.jpg` — dashboard image asset
 - `PD_Nidagundi_FINAL_A4.pdf` — supporting project document
 
 ## Local Preview
