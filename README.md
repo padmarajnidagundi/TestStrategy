@@ -25,6 +25,32 @@ Based on the thesis document (`PD_Nidagundi_FINAL_A4.pdf`) and the public page i
 9. Clarify **Revenue Streams / Impact**: lower rework, faster safe releases, improved reliability and decision quality.
 10. Iterate continuously: update the board every sprint/release based on defects, incidents, and feedback.
 
+## Short Case Studies
+
+### 1. MCP Tool Timeout in an Order Support Agent
+
+**Context:** An AI support agent used an MCP inventory tool to check stock before confirming an order.
+
+**Scenario:** The tool was slow, unavailable, and intermittently returned malformed responses during peak traffic.
+
+**Test approach:** QA exercised tool success, timeout, retry, cancellation, partial-failure, and fallback flows. Contract tests verified the required fields and response types, while end-to-end tests confirmed that the agent did not promise an order it could not fulfill.
+
+**Quality gate:** No false confirmations, graceful degradation within the agreed timeout, and 100% pass of critical tool-contract tests.
+
+**Reusable lesson:** Test the agent and its tool boundary together; an agent's natural-language response is only as reliable as the tool result and fallback policy.
+
+### 2. Policy Drift in a Benefits Assistant
+
+**Context:** An employee benefits assistant answered policy questions using a frequently updated knowledge source.
+
+**Scenario:** The model produced outdated eligibility rules and cited source documents that no longer matched the answer.
+
+**Test approach:** QA maintained a versioned evaluation set of policy questions, compared answers across model and knowledge-source versions, and added groundedness checks against approved documents. Human reviewers labeled ambiguous and high-risk answers before release.
+
+**Quality gate:** Critical policy scenarios pass at the approved threshold, every cited source is current, and no high-severity answer is released without human review.
+
+**Reusable lesson:** Test model behavior, retrieval data, citations, and policy updates as one versioned system, not as separate components.
+
 ## Included
 
 - Nine-block AI Agent test strategy Lean Canvas
