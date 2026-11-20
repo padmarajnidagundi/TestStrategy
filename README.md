@@ -1,4 +1,4 @@
-# TestStrategy
+# Test Strategy - Software Testing in AI SDLC (AI-native or agentic software development lifecycle)
 
 A public-facing Lean Canvas test strategy for AI agents and MCP-enabled systems.
 
